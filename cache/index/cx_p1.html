@@ -1,0 +1,521 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="/template/jingpin/css/stui_block.css" type="text/css">
+<link rel="stylesheet" href="/template/jingpin/css/stui_default.css" type="text/css">
+<link rel="stylesheet" href="/template/jingpin/css/iconfont.css" type="text/css">
+<link rel="stylesheet" href="/template/jingpin/css/aui.css" type="text/css">
+<script type="text/javascript" src="/template/jingpin/js/jquery.min.js"></script>
+<script type="text/javascript" src="/template/jingpin/js/stui_default.js"></script>
+<script type="text/javascript" src="/template/jingpin/js/stui_block.js"></script>
+<script type="text/javascript" src="/template/jingpin/js/submit_res.js"></script>
+<script type="text/javascript" src="//at.alicdn.com/t/font_1486157_6uw53bh8p6l.js"></script>
+<!--[if lt IE 9]>
+<script src="/style/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="/style/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style type="text/css">
+body{
+background-repeat:repeat;background-size:inherit;background-attachment:fixed;background-position:center center;background: url(); 
+}
+.stui-header__logo .logo {
+display: block;
+width: 150px;
+height: 50px;
+background: url(/images/logo.png) no-repeat;
+background-position: 50% 50%;
+background-size: cover;
+}
+@media (max-width:767px){
+body:before{background: url() center 0 no-repeat; background-attachment: fixed;background-size: cover;}
+.stui-header__top{ min-height: 50px;}
+.stui-header__logo{ margin-top: 10px; margin-left: 10px;}
+}
+@media (max-width: 1023px){ 
+.stui-header__logo .logo {
+width: 90px;
+height: 30px;
+background: url(/images/logo.png) no-repeat;
+background-position: 50% 50%;
+background-size: cover;
+}}
+</style><title>尝鲜视频列表-米酷影视 - 在线免费高清电影！</title>
+<meta name="keywords" content="视频排行,电影,视频大全,在线高清电影,付费电影,免费电影,剧集,电影,在线观看,VIP高清电影直播">
+<meta name="description" content="米酷影视，是专门做剧集,电影等在线播放服务，本页面提供电影的相关内容。">
+</head>
+<body >
+<div id="wrap" class="flex-wrap flex-vertical">
+<div id="main" class="flex-con">
+<!--head-->
+<header class="stui-header__top clearfix" id="header-top">
+<div class="container">
+<div class="row">
+<div class="stui-header_bd clearfix">
+<div class="stui-header__logo">
+<a class="logo" href="/index.html"></a>
+</div>
+<ul class="stui-header__menu">
+<li class=""><a href="/index.html">首页</a></li>
+<li class=" hidden-xs"><a href="/movie.html">电影</a></li>
+<li class=" hidden-xs"><a href="/tv.html">剧集</a></li>
+<li class=" hidden-xs"><a href="/dongman.html">动漫</a></li>
+<li class=" hidden-xs"><a href="/zongyi.html">综艺</a></li>
+<li><a href="javascript:;">更多 <i class="icon iconfont icon-moreunfold"></i></a>
+<ul class="dropdown">
+<li class=""><a href="/movie.html">电影</a></li>
+<li class=""><a href="/tv.html">剧集</a></li>
+<li class=""><a href="/dongman.html">动漫</a></li>
+<li class=""><a href="/zongyi.html">综艺</a></li>
+<li class=""><a href="/yule.html">娱乐</a></li>
+<li class=""><a href="/mv.html">MV</a></li>
+<li class=""><a href="/music.html">音乐</a></li>
+<li class=""><a href="/yy.html">美女</a></li>
+<li class="active"><a href="/cx.html">尝鲜</a></li>
+<li class=""><a href="/news.html">资讯</a></li>
+<li class=""><a href="/zhibo.html">直播</a></li>
+<li class=""><a href="/star.html">明星</a></li>
+<li class=""><a href="/huya.php">虎牙直播</a></li>
+<li class=""><a href="/hjzb.php">花椒直播</a></a></li>
+<li class=""><a href="/mv1.php">酷狗MV</a></a></li>
+<li class=""><a href="/jx.html">视频解析</a></li>
+<li class=""><a href="/so.html">全网搜</a></li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript" src="/template/jingpin/js/jquery.autocomplete.js"></script>
+<div class="stui-header__search">
+<input type="text" id="wd" name="wd" class="mac_wd form-control" value="" placeholder="输入明星、影片关键词" onkeydown='if(event.keyCode==13){submi.click()}'/>
+<button class="submit" id="submi" type="submit" onclick="submit()"><i class="icon iconfont icon-search"></i></button>
+<a class="search-close visible-xs" href="javascript:;"><i class="icon iconfont icon-close"></i></a>
+</div>
+<ul class="stui-header__user">
+<li>
+<a href="/ucenter/login.php" title="账户"><i class="icon iconfont icon-account"></i></a>
+</li>
+<li>
+<a href="javascript:;"><i class="icon iconfont icon-clock"></i></a>
+<div class="dropdown">
+<h5 class="margin-0 text-muted">
+<a class="historyclean text-muted pull-right" href="">清空</a>播放记录
+</h5>
+<ul class="history clearfix" id="stui_history"></ul>
+</div>
+</li>
+<li class="hidden-xs">
+<a href="/book.html" title="留言板"><i class="icon iconfont icon-comments"></i></a>
+</li>
+<li class="hidden-xs">
+<a href="/app.html" title="APP下载"><i class="icon iconfont icon-icondownload"></i></a>
+</li>
+<li class="visible-xs">
+<a class="open-search" href="javascript:;"><i class="icon iconfont icon-search"></i></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+<script type="text/javascript">
+	$(".stui-header__user li,.stui-header__menu li").click(function(){
+		$(this).find(".dropdown").toggle();
+	});
+	$(".open-search").click(function(){
+		var Seacrh=$(".stui-header__search");
+		Seacrh.addClass("active").siblings().hide();
+		Seacrh.find(".form-control").focus();
+		$(".search-close").click(function(){
+			Seacrh.removeClass("active").siblings().show();
+		});
+	});
+</script>
+<!--head--><div class="container">
+    <div class="row">
+        <a href="网址" target="_blank"><img src="/images/guanggao.gif" style="width:100%"></a>        <div class="stui-pannel stui-pannel-bg clearfix">
+            <div class="stui-pannel-box">
+                <div class="stui-pannel_hd">
+
+                    <!-- 筛选 -->
+                    <ul class="stui-screen__list type-slide clearfix">
+                        <li><span class="text-muted">按类型</span></li>
+                        <li><a href="cx.php" >全部</a></li>
+                        <li><a href='/cx_1_1.html'>电影</a></li><li><a href='/cx_2_1.html'>连续剧</a></li><li><a href='/cx_3_1.html'>综艺</a></li><li><a href='/cx_4_1.html'>动漫</a></li><li><a href='/cx_5_1.html'>动作片</a></li><li><a href='/cx_6_1.html'>喜剧片</a></li><li><a href='/cx_7_1.html'>爱情片</a></li><li><a href='/cx_8_1.html'>科幻片</a></li><li><a href='/cx_9_1.html'>恐怖片</a></li><li><a href='/cx_10_1.html'>剧情片</a></li><li><a href='/cx_11_1.html'>战争片</a></li><li><a href='/cx_12_1.html'>国产剧</a></li><li><a href='/cx_13_1.html'>香港剧</a></li><li><a href='/cx_14_1.html'>韩国剧</a></li><li><a href='/cx_15_1.html'>美国剧</a></li><li><a href='/cx_16_1.html'>论理片</a></li><li><a href='/cx_17_1.html'>海外剧</a></li><li><a href='/cx_18_1.html'>台湾剧</a></li><li><a href='/cx_19_1.html'>日本剧</a></li><li><a href='/cx_21_1.html'>泰国剧</a></li><li><a href='/cx__1.html'></a></li><li><a href='/cx__1.html'></a></li>                    </ul>
+                    <!-- end 筛选 -->
+                </div>
+                <div class="stui-pannel_bd">
+                    <ul class="stui-vodlist clearfix">
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/40600.html'
+                                       title='安家'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-21/202002211582293750.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2020</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/40600.html'
+                                                    title='安家'>安家</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：孙俪 / 罗晋 / 张萌 / 郭涛 / 胡可 / 王自健 / 田雷 / 杨皓宇 / 孙佳雨 / 张晓谦 / 王艺哲</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/23353.html'
+                                       title='Super R1SE·蓄能季'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2019-08-11/201908111565529983.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2019</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/23353.html'
+                                                    title='Super R1SE·蓄能季'>Super R1SE·蓄能季</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：周震南 / 何洛洛 / 焉栩嘉 / 夏之光 / 姚琛 / 翟潇闻 / 张颜齐 / 刘也 / 任豪 / 赵磊 / 赵让</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/34179.html'
+                                       title='宅着干点啥'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-04/202002041580815391.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2020</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/34179.html'
+                                                    title='宅着干点啥'>宅着干点啥</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：未知</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/40261.html'
+                                       title='嘿！你在干嘛呢？'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-15/202002151581762288.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2020</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/40261.html'
+                                                    title='嘿！你在干嘛呢？'>嘿！你在干嘛呢？</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：未知</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/41127.html'
+                                       title='制裁特攻'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-03-01/202003011583072084.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2018</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/41127.html'
+                                                    title='制裁特攻'>制裁特攻</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：丹泽尔·华盛顿 / 佩德罗·帕斯卡 / 艾什顿·桑德斯 / 奥森·比恩 / 比尔·普尔曼 / 梅丽莎·里奥 / 乔纳森·斯卡弗 / 沙基纳·贾弗里 / 卡罗琳·戴 / 特德·阿尔奇迪 / 杰伊·赫农 / 马克西米利安·麦克纳马拉 / 安德烈·阿罗维斯基</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/32847.html'
+                                       title='Sugar man3'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2019-12-01/201912011575187061.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2019</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/32847.html'
+                                                    title='Sugar man3'>Sugar man3</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：未知</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/41126.html'
+                                       title='奇葩胖嫂'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-03-01/202003011583069014.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2018</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/41126.html'
+                                                    title='奇葩胖嫂'>奇葩胖嫂</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：孙晶 / 孔德峰 / 周艺勤 / 徐佳蕾</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/39966.html'
+                                       title='Player2'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-09/202002091581261483.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2020</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/39966.html'
+                                                    title='Player2'>Player2</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：李寿根 / 金东炫 / 李伊庚 / 黄帝圣 / 李陈镐 / 李龙真 / 郑赫</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/40314.html'
+                                       title='旅行者-阿根廷'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-16/202002161581854010.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2020</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/40314.html'
+                                                    title='旅行者-阿根廷'>旅行者-阿根廷</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：柳俊烈 李帝勋</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/38402.html'
+                                       title='Handsome Tigers'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-09/202002091581255009.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2020</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/38402.html'
+                                                    title='Handsome Tigers'>Handsome Tigers</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：李尚允，车银优，徐芝释，金承贤，姜景晙，Julien Kang，Shorry</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/40893.html'
+                                       title='地球脸红了'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-26/202002261582718012.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2020</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/40893.html'
+                                                    title='地球脸红了'>地球脸红了</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：杨仕泽 / 张令仪 / 徐凯鑫 / 李欢 / 李淑婷 / 梁国动栋 / 闫猛 / 范静祎</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/40362.html'
+                                       title='开玩笑第二季'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-17/202002171581925981.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2020</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/40362.html'
+                                                    title='开玩笑第二季'>开玩笑第二季</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：金·凯瑞 / 弗兰克·兰格拉 / 朱迪·格雷尔 / 凯瑟琳·基纳 / 贾斯汀·柯</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/28965.html'
+                                       title='法律与秩序：特殊受害者第二十一季'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2019-10-06/201910061570338825.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2019</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/28965.html'
+                                                    title='法律与秩序：特殊受害者第二十一季'>法律与秩序：特殊受害者第二十一季</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：诺韦尔托·巴尔巴 / 让·德·塞贡扎克 / 蒂莫西·布斯菲尔德 / 玛莎·米切尔</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/34427.html'
+                                       title='这个男人是我人生最大的错误'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-01-20/202001201579512250.png'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2020</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/34427.html'
+                                                    title='这个男人是我人生最大的错误'>这个男人是我人生最大的错误</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：速水直道,松井爱莉,田中道子,入江甚仪,片山萌美,平冈祐太</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/40596.html'
+                                       title='执着的追踪'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-21/202002211582291623.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2017</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/40596.html'
+                                                    title='执着的追踪'>执着的追踪</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：刘牧 / 樊少皇 / 亦涵 / 管乐</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/41125.html'
+                                       title='意大利制造'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-03-01/202003011583065132.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2020</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/41125.html'
+                                                    title='意大利制造'>意大利制造</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：连姆·尼森,琳赛·邓肯,米切尔·理查德森,瓦莱丽亚·比莱洛</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/23638.html'
+                                       title='WWE-世界摔跤娱乐.2019'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2019-08-14/201908141565757747.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2019</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/23638.html'
+                                                    title='WWE-世界摔跤娱乐.2019'>WWE-世界摔跤娱乐.2019</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：未知</p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class='col-md-6 col-sm-4 col-xs-3'>
+                                <div class='stui-vodlist__box'>
+                                    <a class='stui-vodlist__thumb lazyload'                                        href='./cxplay/40001.html'
+                                       title='刘老根3'
+                                       data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-10/202002101581345548.jpg'>
+                                        <span class='play hidden-xs'></span>
+                                        <span class='pic-tag pic-tag-b'>2020</span>
+                                        <span class='pic-text text-right'></span></a>
+                                    <div class='stui-vodlist__detail'>
+                                        <h4 class='title text-overflow'><a
+                                                    href='./cxplay/40001.html'
+                                                    title='刘老根3'>刘老根3</a>
+                                        </h4>
+                                        <p class='text text-overflow text-muted hidden-xs'>
+                                            主演：赵本山 / 范伟 / 李静 / 闫学晶 / 王小宝</p>
+                                    </div>
+                                </div>
+                            </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="stui-page text-center cleafix">
+        <li><a href="/cx__1.html">首页</a></li><li class="active"><a href="/cx__1.html">1</a></li><li><a href="/cx__2.html">2</a></li><li ><a href="/cx__2.html">></a></li><li ><a href="/cx__25.html">尾页</a></li>    </ul>
+<div class="stui-foot clearfix">
+	<div class="container">
+		<div class="row">
+			<div class="col-pd text-center masked">
+			<p>米酷影院不承担任何由于个人原因非法运盈所引起的争议和法律责任<br />
+本网站内容收集于互联网，本站只提供web页面服务,并不提供影片资源存储录制、上传,播放功能<br />
+Copyright &copy;&nbsp; 米酷影视 版权所有</p>
+			<p class="text-center"></p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div id="footer" class="border-t hidden-lg hidden-md" >
+	<ul class="flex-wrap" style="font-weight:bold">
+		<a class="flex-con paiban " href="/index.html"><li onclick="randomSwitchBtn(this);">首页</li></a>
+		<a class="flex-con paiban active" href="/cx.html"><li onclick="randomSwitchBtn(this);">抢先</li></a>
+		<a class="flex-con paiban " href="/hall.html"><li onclick="randomSwitchBtn(this);">大厅</li></a>
+		<a class="flex-con paiban " href="/fuli.html"><li onclick="randomSwitchBtn(this);">福利</li></a>
+		<a class="flex-con paiban " href="/so.html"><li onclick="randomSwitchBtn(this);">全网搜</li></a>
+	</ul>
+</div>
+	<ul class="stui-extra clearfix">
+		<li><a class="backtop" href="javascript:scroll(0,0)" style="display: block;"><i class="icon iconfont icon-less"></i></a></li>
+		<li class="visible-xs"><a class="open-share" href="javascript:;"><i class="icon iconfont icon-share"></i></a></li>
+		<li class="hidden-xs"><span><i class="icon iconfont icon-qrcode"></i></span>
+		<div class="sideslip">
+			<div class="col-pd  text-center">
+			<img width="150" height="150" class="qrcode">
+			<p class="text-center font-12">扫码用手机访问</p>
+			</div>
+		</div>
+		</li>
+		<li title="会员中心"><a class="open-share" href="/ucenter"><i class="icon iconfont icon-smile"></i></a></li>
+		<li><a href="/book.html"><i class="icon iconfont icon-comments"></i></a></li>
+	</ul>
+</div>
+</body>
+</html>
