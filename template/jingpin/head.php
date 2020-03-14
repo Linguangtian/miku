@@ -5,7 +5,7 @@
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="/template/jingpin/css/stui_block.css" type="text/css">
+<link rel="stylesheet" href="/template/jingpin/css/stui_block.css?v=101" type="text/css">
 <link rel="stylesheet" href="/template/jingpin/css/stui_default.css" type="text/css">
 <link rel="stylesheet" href="/template/jingpin/css/iconfont.css" type="text/css">
 <link rel="stylesheet" href="/template/jingpin/css/aui.css" type="text/css">

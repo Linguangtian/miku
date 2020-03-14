@@ -11,8 +11,13 @@ if($year==''){$year='all';}
 if($cat==''){$cat='all';}
 if($area==''){$area='all';}
 if($act==''){$act='all';}
-if($leixing=="dongman"){$wangzhi="http://www.360kan.com/$leixing/list.php?cat=$cat&year=$year&area=$area&rank=$rank&pageno=$pageno";}
-else{$wangzhi="http://www.360kan.com/$leixing/list.php?cat=$cat&year=$year&area=$area&act=$act&rank=$rank&pageno=$pageno";}
+if($leixing=="dongman") {
+    $wangzhi="http://www.360kan.com/$leixing/list.php?cat=$cat&year=$year&area=$area&rank=$rank&pageno=$pageno";
+}
+else{
+    $wangzhi="http://www.360kan.com/$leixing/list.php?cat=$cat&year=$year&area=$area&act=$act&rank=$rank&pageno=$pageno";
+
+}
 $fcon=fileget($wangzhi,5);
 $vname='#<span class="s1">(.*?)</span>#';
 $fname='#<span class="point">(.*?)</span>#';

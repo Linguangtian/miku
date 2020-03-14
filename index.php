@@ -19,6 +19,7 @@ function start($config) {
 
     ob_start();
     include($config['index_file']);
+
     $content = ob_get_contents();
     file_put_contents($config['cache_file'], $content);
     ob_end_flush();

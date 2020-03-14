@@ -1,21 +1,25 @@
-<div class="stui-foot clearfix">
-	<div class="container">
-		<div class="row">
-			<div class="col-pd text-center masked">
-			<p><?php echo $mkcms_copyright;?></p>
-			<p class="text-center"><?php echo $mkcms_tongji;?></p>
-			</div>
-		</div>
-	</div>
-</div>
-</div>
+<style>
+#footer{
+    min-height: 65px;
+}
+.stui-page {
+    margin-bottom: 105px
+}
+.paiban{
+    width: 25%;
+}
+</style>
+
 <div id="footer" class="border-t hidden-lg hidden-md" >
 	<ul class="flex-wrap" style="font-weight:bold">
-		<a class="flex-con paiban <?php echo $index;?>" href="/index.html"><li onclick="randomSwitchBtn(this);">首页</li></a>
-		<a class="flex-con paiban <?php echo $cx;?>" href="/cx.html"><li onclick="randomSwitchBtn(this);">抢先</li></a>
-		<a class="flex-con paiban <?php echo $dt;?>" href="/hall.html"><li onclick="randomSwitchBtn(this);">大厅</li></a>
-		<a class="flex-con paiban <?php echo $fl;?>" href="/fuli.html"><li onclick="randomSwitchBtn(this);">福利</li></a>
-		<a class="flex-con paiban <?php echo $so;?>" href="/so.html"><li onclick="randomSwitchBtn(this);">全网搜</li></a>
+		<a class="flex-con paiban <?php echo $index;?>" href="/index.html"><li >首页</li></a>
+		<a class="flex-con paiban <?php echo $cx;?>" href="/cx.html"><li >抢先</li></a>
+        <a class="flex-con paiban " href="/so.html"><li >搜索</li></a>
+        <a class="flex-con paiban " href="/so.html"><li >历史</li></a>
+
+	<!--	<a class="flex-con paiban <?php /*echo $dt;*/?>" href="/hall.html"><li onclick="randomSwitchBtn(this);">大厅</li></a>
+		<a class="flex-con paiban <?php /*echo $fl;*/?>" href="/fuli.html"><li onclick="randomSwitchBtn(this);">福利</li></a>
+		<a class="flex-con paiban <?php /*echo $so;*/?>" href="/so.html"><li onclick="randomSwitchBtn(this);">全网搜</li></a>-->
 	</ul>
 </div>
 	<ul class="stui-extra clearfix">

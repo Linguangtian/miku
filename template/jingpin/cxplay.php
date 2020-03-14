@@ -168,6 +168,11 @@ alert_href('对不起,您观看的视频已经下架,请到官网观看.谢谢!'
 </div><!-- 剧情简介-->
 </div>
 <script>
+
+
+
+
+
  $(function () {
 	 $.each($('.dianshijua'),function () {
 		var al = $('.stui-content__playlist a');
@@ -205,7 +210,43 @@ alert_href('对不起,您观看的视频已经下架,请到官网观看.谢谢!'
 	// 下一集
 	$("#btn-next1").click(function() {
 		$("#ys.btn-play-source").next().click();
-		});})
+		});
+
+
+     if(plus.os.name =='Android'){
+
+         console.log('Android');
+
+         varself = plus.webview.currentWebview();
+
+         self.setStyle({videoFullscreen:'landscape'//横屏 });
+
+         }else{
+
+             console.log('IOS');
+
+             varvideoElem =document.querySelector('video');//video元素 // video元素开始全屏
+
+             // video元素开始全屏 
+
+             videoElem.addEventListener('webkitbeginfullscreen',function(){
+
+                 plus.screen.lockOrientation('landscape');
+
+             });
+
+             // video元素全屏结束
+
+             videoElem.addEventListener('webkitendfullscreen',function(){
+
+                 plus.screen.lockOrientation('portrait');
+
+             });
+
+         }
+
+
+ })
 </script>
 <script>
 function bofang(obj) {

@@ -1,5 +1,5 @@
 <?php
-$start=time();
+
 if (empty($_GET['page'])) {
     $_GET['page'] = '1';
 }

@@ -1,8 +1,11 @@
 <?php
 include 'head.php';
+
 $dm='active';
 $leixing="dongman";
+
 require 'system/360.php';
+
 $cs0=$_GET['cat'];//类型
 $cs1=$_GET['year'];//年份
 $cs2=$_GET['area'];//地区
@@ -265,6 +268,7 @@ $ii ++;}}?>
 <div class="stui-pannel_bd">
 <ul class="stui-vodlist clearfix">
 				<?php
+
 					foreach ($xname as $key=>$xvau){ $do=$xlist[$key];
 					if ($i<28){
 						$ccb=vod.$do;
