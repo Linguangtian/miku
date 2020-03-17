@@ -3,6 +3,7 @@ RewriteRule ^index.html$ index.php
 RewriteRule ^app.html$ app.php
 RewriteRule ^mv.html$ mv.php
 RewriteRule ^so.html$ so.php
+RewriteRule ^history.html$ history.php
 RewriteRule ^jx.html$ jx.php
 RewriteRule ^jx-(.*).html$ jx.php?wd=$1
 RewriteRule ^tv.html$ tv.php

@@ -61,7 +61,7 @@ alert_href('对不起,您观看的视频已经下架,请到官网观看.谢谢!'
 <div class="stui-player__detail detail" id="dianshijuid">
 <span style="color:#ff0000">温馨提示：视频内容来源于资源站视频内的广告与本站无关请勿相信！！</span>
 				<ul class="more-btn">
-				<li id="xlus"><a href="javascript:void(0)" onclick="xldata(this)" data-jk="" class="btn btn-sm btn-default" title="刷新">刷新</a></li>
+				<li id="xlus"><a href="javascript:void(0)" onclick='xldata(this)' data-jk="" class="btn btn-sm btn-default" title="刷新">刷新</a></li>
 				<li><a href="javascript:scroll(0,0)" class="btn btn-default" id="btn-prev" title="上一集"><i class="icon iconfont icon-back hidden-xs"></i> 上一集</a></li>
 				<li><a href="javascript:scroll(0,0)" class="btn btn-default" id="btn-next" title="下一集">下一集 <i class="icon iconfont icon-more hidden-xs"></i></a></li>
 				<li><a href="/jx-<?php echo $timu;?>.html" class="dropbtn btn btn-sm btn-default" title="换源">换源</a></li>
@@ -73,7 +73,7 @@ alert_href('对不起,您观看的视频已经下架,请到官网观看.谢谢!'
 				<span class="text-muted"><?php echo $zuyuangx;?></span>
 				</div>
 </div>
-<!-- 播放器-->
+<!-- 播放器52-->
 <div class="stui-pannel stui-pannel-bg clearfix">
 <div class="stui-pannel-box b playlist mb">
 <div class="stui-pannel_hd">
@@ -92,7 +92,9 @@ alert_href('对不起,您观看的视频已经下架,请到官网观看.谢谢!'
 				    $v = explode("\n",$b);
 				    $d[] =$v;
 				}
-				foreach($d as $k=>$v){
+
+
+				foreach(array_reverse($d) as $k=>$v){
 				    foreach ($v as $cc){
 				         $u = explode("$",$cc);
 						if(strpos($u[1] ,'m3u8')){
@@ -169,84 +171,65 @@ alert_href('对不起,您观看的视频已经下架,请到官网观看.谢谢!'
 </div>
 <script>
 
+    if(plus.os.name =='Android'){
+
+        alert('Android');
+
+        var self = plus.webview.currentWebview();
+
+        self.setStyle({videoFullscreen:'landscape'//横屏 });
+
+        }
 
 
 
 
- $(function () {
-	 $.each($('.dianshijua'),function () {
+        $(function () {
+
+
+     $.each($('.dianshijua'),function () {
 		var al = $('.stui-content__playlist a');
 		al.attr('class','btn-play-source am-btn am-btn-default lipbtn');
 		});
-		$.each($('.lipbtn'),function () {
-			var url = $(this).attr('href');
-			$(this).attr('data-href',url);
-			$(this).attr('href','javascript:;');
-			$(this).attr('onclick','bofang(this)');
-			});
-			$('#xlus').children('a:eq(0)').addClass('jkbtn0');
-			var autourl = $('.lipbtn:eq(0)').attr('data-href');
-			$('.lipbtn:eq(0)').attr('id','ys');
-			var text = $('.lipbtn:eq(0)').text();
-			$('.js').text('-'+text+'');
-			var jiekou = $('#xlus').children('a:eq(0)').attr('data-jk');
-			if(autourl!=''||autourl!=null){
-				setTimeout(function () {
-					$('#video').attr('src', jiekou + autourl);
-					},0)
-					}
-		// 上一集
-		$("#btn-pre").click(function() {
-			$("#ys.btn-play-source").prev().click();
-			});
-		// 下一集
-		$("#btn-next").click(function() {
-		$("#ys.btn-play-source").next().click();
-		});
-		// 上一集
-		$("#btn-pre1").click(function() {
-		$("#ys.btn-play-source").prev().click();
-		});
-	// 下一集
-	$("#btn-next1").click(function() {
-		$("#ys.btn-play-source").next().click();
-		});
+     $.each($('.lipbtn'), function () {
+         var url = $(this).attr('href');
+         $(this).attr('data-href', url);
+         $(this).attr('href', 'javascript:;');
+         $(this).attr('onclick', 'bofang(this)');
+     });
+     $('#xlus').children('a:eq(0)').addClass('jkbtn0');
+     var autourl = $('.lipbtn:eq(0)').attr('data-href');
+     $('.lipbtn:eq(0)').attr('id', 'ys');
+     var text = $('.lipbtn:eq(0)').text();
+     $('.js').text('-' + text + '');
+     var jiekou = $('#xlus').children('a:eq(0)').attr('data-jk');
+     if (autourl != '' || autourl != null) {
+         setTimeout(function () {
+             $('#video').attr('src', jiekou + autourl);
+         }, 0)
+     }
+     // 上一集
+     $("#btn-pre").click(function () {
+         $("#ys.btn-play-source").prev().click();
+     });
+     // 下一集
+     $("#btn-next").click(function () {
+         $("#ys.btn-play-source").next().click();
+     });
+     // 上一集
+     $("#btn-pre1").click(function () {
+         $("#ys.btn-play-source").prev().click();
+     });
+     // 下一集
+     $("#btn-next1").click(function () {
+         $("#ys.btn-play-source").next().click();
+     });
 
 
-     if(plus.os.name =='Android'){
-
-         console.log('Android');
-
-         varself = plus.webview.currentWebview();
-
-         self.setStyle({videoFullscreen:'landscape'//横屏 });
-
-         }else{
-
-             console.log('IOS');
-
-             varvideoElem =document.querySelector('video');//video元素 // video元素开始全屏
-
-             // video元素开始全屏 
-
-             videoElem.addEventListener('webkitbeginfullscreen',function(){
-
-                 plus.screen.lockOrientation('landscape');
-
-             });
-
-             // video元素全屏结束
-
-             videoElem.addEventListener('webkitendfullscreen',function(){
-
-                 plus.screen.lockOrientation('portrait');
-
-             });
-
-         }
 
 
- })
+
+     })
 </script>
 <script>
 function bofang(obj) {
@@ -371,6 +354,7 @@ function xldata(obj) {
 </div>
 </div>
 </div>
+</body>
 <script>
     $('.hot-cate-title li').hover(function () {
         var index = $(this).data('index'),

@@ -63,7 +63,7 @@
 <a href="javascript:;"><i class="icon iconfont icon-clock"></i></a>
 <div class="dropdown">
 <h5 class="margin-0 text-muted">
-<a class="historyclean text-muted pull-right" href="">清空</a>播放记录
+<a class="historyclean text-muted pull-right" href="">清空</a>播放记录22
 </h5>
 <ul class="history clearfix" id="stui_history"></ul>
 </div>

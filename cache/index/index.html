@@ -64,20 +64,34 @@ background-size: cover;
     }
     .index-header1{
         margin-top: 1rem;
-        padding-right: 10px;
-        padding-left: 10px;
-        width: calc(100%-20px);
+        width:100%;
     }
     .index-header1 a{
         display: inline-block;
-        width: 29%;
-        margin:0  1.5%;
+        width: 30.5%;
+
         margin-bottom: 10px;
-        font-size: 1.2rem;line-height: 3rem;
+        font-size: 0.7rem;line-height: 2rem;
         text-align: center;
         background-color: #d8d7d7;
         border-radius: 5px;
     }
+    .index-header1 a:nth-child(3n-1){
+        margin:0  3%;
+    }
+    .search-bnt{
+        border-top-right-radius:4px;
+        border-bottom-right-radius:4px;
+        background: #d9534f;
+        border: 1px solid #d9534f;
+        border-left: 0;
+    }
+.form-control{
+border-left: 0;
+border-right: 0;
+    border-radius: 0;
+}
+
 </style>
 
 
@@ -113,13 +127,12 @@ background-size: cover;
 
 <div class="container ">
     <div class="row" style="padding-left: 15px; padding-right: 15px;">
-        <div class="col-md-2"></div>
-        <div class=" col-md-4">
+        <div>
             <div class="input-group">
                 <div class="input-group-addon">片名：</div>
                 <input tabindex="2" class="form-control searchall" id="wd" name="sousuo" type="text"
                        placeholder="输入明星、影片关键词" value="" required="required" onkeydown="if(event.keyCode==13){submi.click()}">
-                <span class="input-group-btn ">
+                <span class="input-group-btn search-bnt">
 					<button id="cu" class="btnn btn-danger" style="border:0" onclick="submit()"> &nbsp; 搜 &nbsp; 索 &nbsp; </button>
                 </span>
             </div>
@@ -128,6 +141,7 @@ background-size: cover;
         <div class="col-md-2"></div>
     </div>
 </div>
+
 
 <!-- 公告start
 <div class="stui-pannel-bg clearfix" style="background-color: #ff6600;">
@@ -216,7 +230,7 @@ background-size: cover;
                                 <li class="col-lg-7 col-md-5 col-sm-3 col-xs-3 ">                                <div class="stui-vodlist__box stui-vodlist__bg">
                                     <a class="stui-vodlist__thumb active lazyload" href="vod/m/f6bkaBH5S0H3Tx.html"
                                        title="星际探索" data-original="http://p1.qhimg.com/d/dy_c8fdad94cf5cff379189be42788acffa.jpg"><span
-                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">6.0</span></span><span class="pic-tag pic-tag-b">2019</span></a>
+                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">7.1</span></span><span class="pic-tag pic-tag-b">2019</span></a>
                                     <div class="stui-vodlist__detail active">
                                         <h4 class="title text-overflow"><a href="vod/m/f6bkaBH5S0H3Tx.html"
                                                                            title="星际探索">星际探索</a>
@@ -225,9 +239,20 @@ background-size: cover;
                                 </div>
                                 </li>
                                 <li class="col-lg-7 col-md-5 col-sm-3 col-xs-3 ">                                <div class="stui-vodlist__box stui-vodlist__bg">
+                                    <a class="stui-vodlist__thumb active lazyload" href="vod/m/hqXqYhH4Rnb2SR.html"
+                                       title="灵魂摆渡黄泉" data-original="http://p0.qhimg.com/t01a02b0e9ac491628b.jpg"><span
+                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">6.0</span></span><span class="pic-tag pic-tag-b">2018</span></a>
+                                    <div class="stui-vodlist__detail active">
+                                        <h4 class="title text-overflow"><a href="vod/m/hqXqYhH4Rnb2SR.html"
+                                                                           title="灵魂摆渡黄泉">灵魂摆渡黄泉</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                </li>
+                                <li class="col-lg-7 col-md-5 col-sm-3 col-xs-3 ">                                <div class="stui-vodlist__box stui-vodlist__bg">
                                     <a class="stui-vodlist__thumb active lazyload" href="vod/m/gKnmaBH5RXn6TR.html"
                                        title="宠爱" data-original="http://p8.qhimg.com/d/dy_9137fcc28530dd4ee6a5332085642c7d.jpg"><span
-                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">5.4</span></span><span class="pic-tag pic-tag-b">2019</span></a>
+                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">5.1</span></span><span class="pic-tag pic-tag-b">2019</span></a>
                                     <div class="stui-vodlist__detail active">
                                         <h4 class="title text-overflow"><a href="vod/m/gKnmaBH5RXn6TR.html"
                                                                            title="宠爱">宠爱</a>
@@ -238,7 +263,7 @@ background-size: cover;
                                 <li class="col-lg-7 col-md-5 col-sm-3 col-xs-3 ">                                <div class="stui-vodlist__box stui-vodlist__bg">
                                     <a class="stui-vodlist__thumb active lazyload" href="vod/m/f6roaBH5S0r8Sx.html"
                                        title="解放·终局营救" data-original="http://p9.qhimg.com/d/dy_7ce5c8be55f76ea30969282afec8ed38.jpg"><span
-                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">7.5</span></span><span class="pic-tag pic-tag-b">2019</span></a>
+                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">5.7</span></span><span class="pic-tag pic-tag-b">2019</span></a>
                                     <div class="stui-vodlist__detail active">
                                         <h4 class="title text-overflow"><a href="vod/m/f6roaBH5S0r8Sx.html"
                                                                            title="解放·终局营救">解放·终局营救</a>
@@ -247,12 +272,12 @@ background-size: cover;
                                 </div>
                                 </li>
                                 <li class="col-lg-7 col-md-5 col-sm-3 col-xs-3 ">                                <div class="stui-vodlist__box stui-vodlist__bg">
-                                    <a class="stui-vodlist__thumb active lazyload" href="vod/m/faXiZhH1QXT4Sx.html"
-                                       title="匆匆那年" data-original="http://p9.qhimg.com/t0151b281257902a075.jpg"><span
-                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">7.4</span></span><span class="pic-tag pic-tag-b">2014</span></a>
+                                    <a class="stui-vodlist__thumb active lazyload" href="vod/m/hqflYRH3SHHATx.html"
+                                       title="悟空传" data-original="http://p4.qhimg.com/t01b7148493c943b3da.jpg"><span
+                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">7.4</span></span><span class="pic-tag pic-tag-b">2017</span></a>
                                     <div class="stui-vodlist__detail active">
-                                        <h4 class="title text-overflow"><a href="vod/m/faXiZhH1QXT4Sx.html"
-                                                                           title="匆匆那年">匆匆那年</a>
+                                        <h4 class="title text-overflow"><a href="vod/m/hqflYRH3SHHATx.html"
+                                                                           title="悟空传">悟空传</a>
                                         </h4>
                                     </div>
                                 </div>
@@ -260,32 +285,10 @@ background-size: cover;
                                 <li class="col-lg-7 col-md-5 col-sm-3 col-xs-3 ">                                <div class="stui-vodlist__box stui-vodlist__bg">
                                     <a class="stui-vodlist__thumb active lazyload" href="vod/m/fqXnaRH5S0j8SR.html"
                                        title="肥龙过江 2020" data-original="http://p2.qhimg.com/d/dy_392bf49b5001e790fa26e8a5f14f2555.jpg"><span
-                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">5.7</span></span><span class="pic-tag pic-tag-b">2020</span></a>
+                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">8.1</span></span><span class="pic-tag pic-tag-b">2020</span></a>
                                     <div class="stui-vodlist__detail active">
                                         <h4 class="title text-overflow"><a href="vod/m/fqXnaRH5S0j8SR.html"
                                                                            title="肥龙过江 2020">肥龙过江 2020</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                                </li>
-                                <li class="col-lg-7 col-md-5 col-sm-3 col-xs-3 ">                                <div class="stui-vodlist__box stui-vodlist__bg">
-                                    <a class="stui-vodlist__thumb active lazyload" href="vod/m/gKblZhH2RHT5SB.html"
-                                       title="寻龙诀" data-original="http://p4.qhimg.com/t015e7176c1e8cf1fe6.jpg"><span
-                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">8.1</span></span><span class="pic-tag pic-tag-b">2015</span></a>
-                                    <div class="stui-vodlist__detail active">
-                                        <h4 class="title text-overflow"><a href="vod/m/gKblZhH2RHT5SB.html"
-                                                                           title="寻龙诀">寻龙诀</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                                </li>
-                                <li class="col-lg-7 col-md-5 col-sm-3 col-xs-3 hidden-xs">                                <div class="stui-vodlist__box stui-vodlist__bg">
-                                    <a class="stui-vodlist__thumb active lazyload" href="vod/m/gKrrZRH5Rnr7Tx.html"
-                                       title="半个喜剧" data-original="http://p7.qhimg.com/d/dy_4512b6ba5abb83c2dffb6cd84ab7c3fe.jpg"><span
-                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">8.1</span></span><span class="pic-tag pic-tag-b">2019</span></a>
-                                    <div class="stui-vodlist__detail active">
-                                        <h4 class="title text-overflow"><a href="vod/m/gKrrZRH5Rnr7Tx.html"
-                                                                           title="半个喜剧">半个喜剧</a>
                                         </h4>
                                     </div>
                                 </div>
@@ -297,6 +300,17 @@ background-size: cover;
                                     <div class="stui-vodlist__detail active">
                                         <h4 class="title text-overflow"><a href="vod/m/f6bnYRH5S0P4TB.html"
                                                                            title="亲爱的新年好">亲爱的新年好</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                </li>
+                                <li class="col-lg-7 col-md-5 col-sm-3 col-xs-3 hidden-xs">                                <div class="stui-vodlist__box stui-vodlist__bg">
+                                    <a class="stui-vodlist__thumb active lazyload" href="vod/m/gKrrZRH5Rnr7Tx.html"
+                                       title="半个喜剧" data-original="http://p7.qhimg.com/d/dy_4512b6ba5abb83c2dffb6cd84ab7c3fe.jpg"><span
+                                                class="play hidden-xs"></span><span class="pic-tag pic-tag-h">5.6</span></span><span class="pic-tag pic-tag-b">2019</span></a>
+                                    <div class="stui-vodlist__detail active">
+                                        <h4 class="title text-overflow"><a href="vod/m/gKrrZRH5Rnr7Tx.html"
+                                                                           title="半个喜剧">半个喜剧</a>
                                         </h4>
                                     </div>
                                 </div>
@@ -340,7 +354,7 @@ background-size: cover;
 <div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="' . ./vod/tv/Q4VsaX7lSzHtMH.html . '" title="' . 安家 . '" alt="' . 安家 . '" data-original="' . http://p7.qhimg.com/d/dy_a62f36eeef1cdcc788ed2114bfafe3a0. . '">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">' . 更新至42集 . '</span>
+<span class="pic-tag pic-tag-b">' . 更新至48集 . '</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
 <a href="' . ./vod/tv/Q4VsaX7lSzHtMH.html . '" title="' . 安家 . '">' . 安家 . '</a>
@@ -352,7 +366,7 @@ background-size: cover;
 <div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="' . ./vod/tv/QrpsbH7lSzHrOH.html . '" title="' . 完美关系 . '" alt="' . 完美关系 . '" data-original="' . http://p7.qhimg.com/d/dy_1663434f35bba33d87e8148b4bf9003e.jpg . '">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">' . 更新至43集 . '</span>
+<span class="pic-tag pic-tag-b">' . 更新至48集 . '</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
 <a href="' . ./vod/tv/QrpsbH7lSzHrOH.html . '" title="' . 完美关系 . '">' . 完美关系 . '</a>
@@ -376,12 +390,36 @@ background-size: cover;
 <div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="' . ./vod/tv/RbVqaX7lSzHmMX.html . '" title="' . 刘老根 第三部 . '" alt="' . 刘老根 第三部 . '" data-original="' . http://p2.qhimg.com/d/dy_07f9f1bdcdf49bdcf7b873c782012ee5. . '">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">' . 更新至34集 . '</span>
+<span class="pic-tag pic-tag-b">' . 更新至40集 . '</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
 <a href="' . ./vod/tv/RbVqaX7lSzHmMX.html . '" title="' . 刘老根 第三部 . '">' . 刘老根 第三部 . '</a>
 </h4>
 <p class="text text-overflow text-muted hidden-xs">' . 主演：赵本山 范伟 闫学晶 李静 朱星澎 . '</p>
+</div>
+</div>
+</li><li class="col-md-6 col-sm-4 col-xs-3">
+<div class="stui-vodlist__box stui-vodlist__bg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="' . ./vod/tv/QbRxcH7lSzHpM3.html . '" title="' . 时光与你都很甜 . '" alt="' . 时光与你都很甜 . '" data-original="' . http://p6.qhimg.com/d/dy_8bbebef645e8d707f7e2b5fadc628b6a.jpg . '">
+<span class="play hidden-xs"></span>
+<span class="pic-tag pic-tag-b">' . 32集全 . '</span>
+</a><div class="stui-vodlist__detail active">
+<h4 class="title text-overflow">
+<a href="' . ./vod/tv/QbRxcH7lSzHpM3.html . '" title="' . 时光与你都很甜 . '">' . 时光与你都很甜 . '</a>
+</h4>
+<p class="text text-overflow text-muted hidden-xs">' . 主演：吕小雨 孙泽源 王晴 敖瑞鹏 孙镇洋 . '</p>
+</div>
+</div>
+</li><li class="col-md-6 col-sm-4 col-xs-3">
+<div class="stui-vodlist__box stui-vodlist__bg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="' . ./vod/tv/PbRqaH7lSzHsOH.html . '" title="' . 两世欢 . '" alt="' . 两世欢 . '" data-original="' . http://p3.qhimg.com/d/dy_496eda867c6ac4488776724a2b9d5f30.jpg . '">
+<span class="play hidden-xs"></span>
+<span class="pic-tag pic-tag-b">' . 更新至30集 . '</span>
+</a><div class="stui-vodlist__detail active">
+<h4 class="title text-overflow">
+<a href="' . ./vod/tv/PbRqaH7lSzHsOH.html . '" title="' . 两世欢 . '">' . 两世欢 . '</a>
+</h4>
+<p class="text text-overflow text-muted hidden-xs">' . 主演：于朦胧 陈钰琪 张思帆 王宫良 马月 . '</p>
 </div>
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
@@ -400,60 +438,12 @@ background-size: cover;
 <div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="' . ./vod/tv/QLVpbH7lSzHtNn.html . '" title="' . 我在北京等你 . '" alt="' . 我在北京等你 . '" data-original="' . http://p3.qhimg.com/d/dy_23a55d106e46730ae3405d3ade33ee88.jpg . '">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">' . 更新至37集 . '</span>
+<span class="pic-tag pic-tag-b">' . 更新至42集 . '</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
 <a href="' . ./vod/tv/QLVpbH7lSzHtNn.html . '" title="' . 我在北京等你 . '">' . 我在北京等你 . '</a>
 </h4>
 <p class="text text-overflow text-muted hidden-xs">' . 主演：李易峰 江疏影 蒋梦婕 胡宇威 何杜娟 . '</p>
-</div>
-</div>
-</li><li class="col-md-6 col-sm-4 col-xs-3">
-<div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="' . ./vod/tv/QLZxbn7lSzLpOX.html . '" title="' . 手可摘星辰 . '" alt="' . 手可摘星辰 . '" data-original="' . http://p8.qhimg.com/d/dy_be2be0c84b35ccde25c10bc2746a8ebe.jpg . '">
-<span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">' . 更新至14集 . '</span>
-</a><div class="stui-vodlist__detail active">
-<h4 class="title text-overflow">
-<a href="' . ./vod/tv/QLZxbn7lSzLpOX.html . '" title="' . 手可摘星辰 . '">' . 手可摘星辰 . '</a>
-</h4>
-<p class="text text-overflow text-muted hidden-xs">' . 主演：何花 罗一航 文苡帆 崔航 李海珊 . '</p>
-</div>
-</div>
-</li><li class="col-md-6 col-sm-4 col-xs-3">
-<div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="' . ./vod/tv/RbNvc07lSzLpMn.html . '" title="' . 无心法师3 . '" alt="' . 无心法师3 . '" data-original="' . http://p0.qhimg.com/d/dy_b7f3dfbf06462767ab87eb610a97dcc8. . '">
-<span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">' . 更新至12集 . '</span>
-</a><div class="stui-vodlist__detail active">
-<h4 class="title text-overflow">
-<a href="' . ./vod/tv/RbNvc07lSzLpMn.html . '" title="' . 无心法师3 . '">' . 无心法师3 . '</a>
-</h4>
-<p class="text text-overflow text-muted hidden-xs">' . 主演：韩东君 陈瑶 隋栐良 丁桥 檀健次 . '</p>
-</div>
-</div>
-</li><li class="col-md-6 col-sm-4 col-xs-3">
-<div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="' . ./vod/tv/PbRqaH7lSzHsOH.html . '" title="' . 两世欢 . '" alt="' . 两世欢 . '" data-original="' . http://p3.qhimg.com/d/dy_496eda867c6ac4488776724a2b9d5f30.jpg . '">
-<span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">' . 更新至28集 . '</span>
-</a><div class="stui-vodlist__detail active">
-<h4 class="title text-overflow">
-<a href="' . ./vod/tv/PbRqaH7lSzHsOH.html . '" title="' . 两世欢 . '">' . 两世欢 . '</a>
-</h4>
-<p class="text text-overflow text-muted hidden-xs">' . 主演：于朦胧 陈钰琪 张思帆 王宫良 马月 . '</p>
-</div>
-</div>
-</li><li class="col-md-6 col-sm-4 col-xs-3">
-<div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="' . ./vod/tv/QbRxcH7lSzHpM3.html . '" title="' . 时光与你都很甜 . '" alt="' . 时光与你都很甜 . '" data-original="' . http://p6.qhimg.com/d/dy_8bbebef645e8d707f7e2b5fadc628b6a.jpg . '">
-<span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">' . 更新至30集 . '</span>
-</a><div class="stui-vodlist__detail active">
-<h4 class="title text-overflow">
-<a href="' . ./vod/tv/QbRxcH7lSzHpM3.html . '" title="' . 时光与你都很甜 . '">' . 时光与你都很甜 . '</a>
-</h4>
-<p class="text text-overflow text-muted hidden-xs">' . 主演：吕小雨 孙泽源 王晴 敖瑞鹏 孙镇洋 . '</p>
 </div>
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
@@ -472,12 +462,36 @@ background-size: cover;
 <div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="' . ./vod/tv/Pbdsb07lSzLoMX.html . '" title="' . 谷文昌 . '" alt="' . 谷文昌 . '" data-original="' . http://p8.qhimg.com/d/dy_dba2f74316a9feb1a5c560522a28b7e2.jpg . '">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">' . 更新至25集 . '</span>
+<span class="pic-tag pic-tag-b">' . 30集全 . '</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
 <a href="' . ./vod/tv/Pbdsb07lSzLoMX.html . '" title="' . 谷文昌 . '">' . 谷文昌 . '</a>
 </h4>
 <p class="text text-overflow text-muted hidden-xs">' . 主演：刘佩琦 刘晶晶 韩童生 奚美娟 程煜 . '</p>
+</div>
+</div>
+</li><li class="col-md-6 col-sm-4 col-xs-3">
+<div class="stui-vodlist__box stui-vodlist__bg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="' . ./vod/tv/RbNvc07lSzLpMn.html . '" title="' . 无心法师3 . '" alt="' . 无心法师3 . '" data-original="' . http://p0.qhimg.com/d/dy_b7f3dfbf06462767ab87eb610a97dcc8. . '">
+<span class="play hidden-xs"></span>
+<span class="pic-tag pic-tag-b">' . 更新至16集 . '</span>
+</a><div class="stui-vodlist__detail active">
+<h4 class="title text-overflow">
+<a href="' . ./vod/tv/RbNvc07lSzLpMn.html . '" title="' . 无心法师3 . '">' . 无心法师3 . '</a>
+</h4>
+<p class="text text-overflow text-muted hidden-xs">' . 主演：韩东君 陈瑶 隋栐良 丁桥 檀健次 . '</p>
+</div>
+</div>
+</li><li class="col-md-6 col-sm-4 col-xs-3">
+<div class="stui-vodlist__box stui-vodlist__bg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="' . ./vod/tv/R4Fob07lSzDrN3.html . '" title="' . 北灵少年志之大主宰 . '" alt="' . 北灵少年志之大主宰 . '" data-original="' . http://p0.qhimg.com/d/dy_c592c332dd6cff1611e1bacbf6d3cf46.jpg . '">
+<span class="play hidden-xs"></span>
+<span class="pic-tag pic-tag-b">' . 48集全 . '</span>
+</a><div class="stui-vodlist__detail active">
+<h4 class="title text-overflow">
+<a href="' . ./vod/tv/R4Fob07lSzDrN3.html . '" title="' . 北灵少年志之大主宰 . '">' . 北灵少年志之大主宰 . '</a>
+</h4>
+<p class="text text-overflow text-muted hidden-xs">' . 主演：王源 欧阳娜娜 骆明劼 马月 徐浩 . '</p>
 </div>
 </div>
 </li>                            </ul>
@@ -497,7 +511,7 @@ background-size: cover;
                             </div>
                             <div class="stui-pannel_bd clearfix">
                                 <ul class="stui-vodlist__text active col-pd clearfix">
-                                    <li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/Q4VsaX7lSzHtMH.html' title='安家'><span class='am-badge am-round pull-left'>1</span><span class='text-muted pull-right'>136.9万</span><em class='text-red'></em>&nbsp;安家</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/QrpsbH7lSzHrOH.html' title='完美关系'><span class='am-badge am-round pull-left'>2</span><span class='text-muted pull-right'>63.7万</span><em class='text-red'></em>&nbsp;完美关系</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/Q4hrcX7lSzDpMX.html' title='三生三世枕上书'><span class='am-badge am-round pull-left'>3</span><span class='text-muted pull-right'>42.4万</span><em class='text-red'></em>&nbsp;三生三世枕上书</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/RbVqaX7lSzHmMX.html' title='刘老根 第三部'><span class='am-badge am-round pull-left'>4</span><span class='text-muted pull-right'>32.6万</span><em class='text-red'></em>&nbsp;刘老根 第三部</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/PbNpbX7lSzHpMX.html' title='大唐女法医'><span class='am-badge am-round pull-left'>5</span><span class='text-muted pull-right'>25.4万</span><em class='text-red'></em>&nbsp;大唐女法医</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/QbRxcH7lSzHpM3.html' title='时光与你都很甜'><span class='am-badge am-round pull-left'>6</span><span class='text-muted pull-right'>23.8万</span><em class='text-red'></em>&nbsp;时光与你都很甜</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/QLVpbH7lSzHtNn.html' title='我在北京等你'><span class='am-badge am-round pull-left'>7</span><span class='text-muted pull-right'>21.6万</span><em class='text-red'></em>&nbsp;我在北京等你</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/PbRqaH7lSzHsOH.html' title='两世欢'><span class='am-badge am-round pull-left'>8</span><span class='text-muted pull-right'>18.6万</span><em class='text-red'></em>&nbsp;两世欢</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/QLlqaH7lSzHoNX.html' title='奈何boss要娶我 第二季'><span class='am-badge am-round pull-left'>9</span><span class='text-muted pull-right'>16.5万</span><em class='text-red'></em>&nbsp;奈何boss要娶我 第二季</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/RbNvc07lSzLpMn.html' title='无心法师3'><span class='am-badge am-round pull-left'>10</span><span class='text-muted pull-right'>15.6万</span><em class='text-red'></em>&nbsp;无心法师3</a></li>                                </ul>
+                                    <li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/Q4VsaX7lSzHtMH.html' title='安家'><span class='am-badge am-round pull-left'>1</span><span class='text-muted pull-right'>93.9万</span><em class='text-red'></em>&nbsp;安家</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/QrpsbH7lSzHrOH.html' title='完美关系'><span class='am-badge am-round pull-left'>2</span><span class='text-muted pull-right'>41.4万</span><em class='text-red'></em>&nbsp;完美关系</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/Q4hrcX7lSzDpMX.html' title='三生三世枕上书'><span class='am-badge am-round pull-left'>3</span><span class='text-muted pull-right'>22.3万</span><em class='text-red'></em>&nbsp;三生三世枕上书</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/RbVqaX7lSzHmMX.html' title='刘老根 第三部'><span class='am-badge am-round pull-left'>4</span><span class='text-muted pull-right'>18.9万</span><em class='text-red'></em>&nbsp;刘老根 第三部</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/QbRxcH7lSzHpM3.html' title='时光与你都很甜'><span class='am-badge am-round pull-left'>5</span><span class='text-muted pull-right'>16.3万</span><em class='text-red'></em>&nbsp;时光与你都很甜</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/PbRqaH7lSzHsOH.html' title='两世欢'><span class='am-badge am-round pull-left'>6</span><span class='text-muted pull-right'>13.8万</span><em class='text-red'></em>&nbsp;两世欢</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/QLVpbH7lSzHtNn.html' title='我在北京等你'><span class='am-badge am-round pull-left'>7</span><span class='text-muted pull-right'>13.2万</span><em class='text-red'></em>&nbsp;我在北京等你</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/PbNpbX7lSzHpMX.html' title='大唐女法医'><span class='am-badge am-round pull-left'>8</span><span class='text-muted pull-right'>12.5万</span><em class='text-red'></em>&nbsp;大唐女法医</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/QLlqaH7lSzHoNX.html' title='奈何boss要娶我 第二季'><span class='am-badge am-round pull-left'>9</span><span class='text-muted pull-right'>7.9万</span><em class='text-red'></em>&nbsp;奈何boss要娶我 第二季</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/tv/Pbdsb07lSzLoMX.html' title='谷文昌'><span class='am-badge am-round pull-left'>10</span><span class='text-muted pull-right'>7.6万</span><em class='text-red'></em>&nbsp;谷文昌</a></li>                                </ul>
                             </div>
                             <div class="stui-pannel_bd">
                                 <div class="stui-pannel__head clearfix">
@@ -569,70 +583,87 @@ background-size: cover;
                     <div class="stui-pannel_bd clearfix">
                         <ul class="stui-vodlist clearfix">
                             <li class="col-md-7 col-sm-3 col-xs-3 ">                                                    <div class='stui-vodlist__box stui-vodlist__bg'>
-                                                        <a class='stui-vodlist__thumb lazyload'                                                            href='./cxplay/21567.html'
-                                                           title='爱·回家之开心速递'
-                                                           data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2019-07-21/201907211563702829.jpg'>
-                                                            <span class='play hidden-xs'></span>
-                                                            <span class='pic-tag pic-tag-b'>2017</span>
-                                                        </a>
-                                                        <div class='stui-vodlist__detail active'>
-                                                            <h4 class='title text-overflow'><a
-                                                                        href='./cxplay/21567.html'
-                                                                        title='爱·回家之开心速递'>爱·回家之开心速递</a>
-                                                            </h4>
-                                                            <p class='text text-overflow text-muted hidden-xs'>
-                                                                主演：刘丹 / 单立文 / 汤盈盈 / 吕慧仪 / 罗乐林 / 马贯东 / 苏韵姿 / 周嘉洛 / 陈浚霆 / 吴伟豪</p>
-                                                        </div>
-                                                    </div>
-                                                    </li>
-                                                <li class="col-md-7 col-sm-3 col-xs-3 ">                                                    <div class='stui-vodlist__box stui-vodlist__bg'>
-                                                        <a class='stui-vodlist__thumb lazyload'                                                            href='./cxplay/42018.html'
-                                                           title='好想回家'
-                                                           data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-03-14/202003141584196736.png'>
-                                                            <span class='play hidden-xs'></span>
-                                                            <span class='pic-tag pic-tag-b'>2006</span>
-                                                        </a>
-                                                        <div class='stui-vodlist__detail active'>
-                                                            <h4 class='title text-overflow'><a
-                                                                        href='./cxplay/42018.html'
-                                                                        title='好想回家'>好想回家</a>
-                                                            </h4>
-                                                            <p class='text text-overflow text-muted hidden-xs'>
-                                                                主演：秦海璐 / 李晓凤 / 王亚楠 / 孙逊</p>
-                                                        </div>
-                                                    </div>
-                                                    </li>
-                                                <li class="col-md-7 col-sm-3 col-xs-3 ">                                                    <div class='stui-vodlist__box stui-vodlist__bg'>
-                                                        <a class='stui-vodlist__thumb lazyload'                                                            href='./cxplay/42015.html'
-                                                           title='苍生大医'
-                                                           data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-03-14/202003141584181939.png'>
-                                                            <span class='play hidden-xs'></span>
-                                                            <span class='pic-tag pic-tag-b'>2020</span>
-                                                        </a>
-                                                        <div class='stui-vodlist__detail active'>
-                                                            <h4 class='title text-overflow'><a
-                                                                        href='./cxplay/42015.html'
-                                                                        title='苍生大医'>苍生大医</a>
-                                                            </h4>
-                                                            <p class='text text-overflow text-muted hidden-xs'>
-                                                                主演：何晟铭 / 朱晓渔 / 李依晓 / 李宗翰 / 刘冠麟 / 王建新 / 李子雄 / 法提麦·雅琦 / 刘芷汐</p>
-                                                        </div>
-                                                    </div>
-                                                    </li>
-                                                <li class="col-md-7 col-sm-3 col-xs-3 ">                                                    <div class='stui-vodlist__box stui-vodlist__bg'>
-                                                        <a class='stui-vodlist__thumb lazyload'                                                            href='./cxplay/29308.html'
-                                                           title='我的英雄学院第四季'
-                                                           data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2019-10-12/201910121570883597.png'>
+                                                        <a class='stui-vodlist__thumb lazyload'                                                            href='./cxplay/32944.html'
+                                                           title='花花万物'
+                                                           data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2019-12-03/201912031575378032.png'>
                                                             <span class='play hidden-xs'></span>
                                                             <span class='pic-tag pic-tag-b'>2019</span>
                                                         </a>
                                                         <div class='stui-vodlist__detail active'>
                                                             <h4 class='title text-overflow'><a
-                                                                        href='./cxplay/29308.html'
-                                                                        title='我的英雄学院第四季'>我的英雄学院第四季</a>
+                                                                        href='./cxplay/32944.html'
+                                                                        title='花花万物'>花花万物</a>
                                                             </h4>
                                                             <p class='text text-overflow text-muted hidden-xs'>
-                                                                主演：山下大辉 / 三宅健太 / 冈本信彦 / 佐仓绫音 / 石川界人 / 梶裕贵 / 增田俊树 / 悠木碧 / 井上麻里奈 / 新垣樽助 / 上村祐翔 / 安野希世乃 / 三木真一郎 / 津田健次郎 / 小林星兰</p>
+                                                                主演：蔡康永/徐熙娣/李星辰</p>
+                                                        </div>
+                                                    </div>
+                                                    </li>
+                                                <li class="col-md-7 col-sm-3 col-xs-3 ">                                                    <div class='stui-vodlist__box stui-vodlist__bg'>
+                                                        <a class='stui-vodlist__thumb lazyload'                                                            href='./cxplay/40737.html'
+                                                           title='我在北京等你'
+                                                           data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-24/202002241582514559.jpg'>
+                                                            <span class='play hidden-xs'></span>
+                                                            <span class='pic-tag pic-tag-b'>2020</span>
+                                                        </a>
+                                                        <div class='stui-vodlist__detail active'>
+                                                            <h4 class='title text-overflow'><a
+                                                                        href='./cxplay/40737.html'
+                                                                        title='我在北京等你'>我在北京等你</a>
+                                                            </h4>
+                                                            <p class='text text-overflow text-muted hidden-xs'>
+                                                                主演： 李易峰 江疏影 蒋梦婕 胡宇威 何杜鹃 李晨浩</p>
+                                                        </div>
+                                                    </div>
+                                                    </li>
+                                                <li class="col-md-7 col-sm-3 col-xs-3 ">                                                    <div class='stui-vodlist__box stui-vodlist__bg'>
+                                                        <a class='stui-vodlist__thumb lazyload'                                                            href='./cxplay/41931.html'
+                                                           title='远方的山楂树'
+                                                           data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-03-13/202003131584029734.jpg'>
+                                                            <span class='play hidden-xs'></span>
+                                                            <span class='pic-tag pic-tag-b'>2019</span>
+                                                        </a>
+                                                        <div class='stui-vodlist__detail active'>
+                                                            <h4 class='title text-overflow'><a
+                                                                        href='./cxplay/41931.html'
+                                                                        title='远方的山楂树'>远方的山楂树</a>
+                                                            </h4>
+                                                            <p class='text text-overflow text-muted hidden-xs'>
+                                                                主演：吴其江 / 马藜 / 林家川 / 孙爽 / 闫学晶 / 沙景昌 / 夏恩 / 杨晓丹 / 那家威 / 张维伊 / 王红梅 / 赵淑珍</p>
+                                                        </div>
+                                                    </div>
+                                                    </li>
+                                                <li class="col-md-7 col-sm-3 col-xs-3 ">                                                    <div class='stui-vodlist__box stui-vodlist__bg'>
+                                                        <a class='stui-vodlist__thumb lazyload'                                                            href='./cxplay/42206.html'
+                                                           title='一个都不能少'
+                                                           data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-03-17/202003171584416901.jpg'>
+                                                            <span class='play hidden-xs'></span>
+                                                            <span class='pic-tag pic-tag-b'>2020</span>
+                                                        </a>
+                                                        <div class='stui-vodlist__detail active'>
+                                                            <h4 class='title text-overflow'><a
+                                                                        href='./cxplay/42206.html'
+                                                                        title='一个都不能少'>一个都不能少</a>
+                                                            </h4>
+                                                            <p class='text text-overflow text-muted hidden-xs'>
+                                                                主演：黄品沅 / 赵君 / 陈瑾 / 萨日娜 / 杨峥 / 周笑莉 / 马冠英 / 牛犇 / 邱林 / 孙嘉璐</p>
+                                                        </div>
+                                                    </div>
+                                                    </li>
+                                                <li class="col-md-7 col-sm-3 col-xs-3 ">                                                    <div class='stui-vodlist__box stui-vodlist__bg'>
+                                                        <a class='stui-vodlist__thumb lazyload'                                                            href='./cxplay/40547.html'
+                                                           title='完美关系DVD版'
+                                                           data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-21/202002211582224183.jpg'>
+                                                            <span class='play hidden-xs'></span>
+                                                            <span class='pic-tag pic-tag-b'>2020</span>
+                                                        </a>
+                                                        <div class='stui-vodlist__detail active'>
+                                                            <h4 class='title text-overflow'><a
+                                                                        href='./cxplay/40547.html'
+                                                                        title='完美关系DVD版'>完美关系DVD版</a>
+                                                            </h4>
+                                                            <p class='text text-overflow text-muted hidden-xs'>
+                                                                主演：黄轩 / 佟丽娅 / 陈数 / 高露 / 袁子芸 / 高凯元 / 李泽锋</p>
                                                         </div>
                                                     </div>
                                                     </li>
@@ -653,37 +684,20 @@ background-size: cover;
                                                         </div>
                                                     </div>
                                                     </li>
-                                                <li class="col-md-7 col-sm-3 col-xs-3 ">                                                    <div class='stui-vodlist__box stui-vodlist__bg'>
-                                                        <a class='stui-vodlist__thumb lazyload'                                                            href='./cxplay/26622.html'
-                                                           title='名侦探柯南'
-                                                           data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2019-09-08/201909081567955945.jpg'>
-                                                            <span class='play hidden-xs'></span>
-                                                            <span class='pic-tag pic-tag-b'>1996</span>
-                                                        </a>
-                                                        <div class='stui-vodlist__detail active'>
-                                                            <h4 class='title text-overflow'><a
-                                                                        href='./cxplay/26622.html'
-                                                                        title='名侦探柯南'>名侦探柯南</a>
-                                                            </h4>
-                                                            <p class='text text-overflow text-muted hidden-xs'>
-                                                                主演：高山南 / 山崎和佳奈 / 神谷明 / 小山力也 / 林原惠美 / 山口胜平 / 田中秀幸 / 岛本须美 / 绪方贤一 / 堀川亮 / 松井菜樱子 / 宫村优子 / 岩居由希子 / 大谷育江 / 高木涉 / 高岛雅罗 / 堀之纪 / 立木文彦 / 小山茉美 / 三石琴乃 / 置鲇龙太郎 / 日高法子 / 池田秀一 / 古谷彻</p>
-                                                        </div>
-                                                    </div>
-                                                    </li>
                                                 <li class="col-md-7 col-sm-3 col-xs-3 hidden-xs">                                                    <div class='stui-vodlist__box stui-vodlist__bg'>
-                                                        <a class='stui-vodlist__thumb lazyload'                                                            href='./cxplay/40737.html'
-                                                           title='我在北京等你'
-                                                           data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-24/202002241582514559.jpg'>
+                                                        <a class='stui-vodlist__thumb lazyload'                                                            href='./cxplay/40600.html'
+                                                           title='安家'
+                                                           data-original='https://img.sokoyo-rj.com/tuku/upload/vod/2020-02-21/202002211582293750.jpg'>
                                                             <span class='play hidden-xs'></span>
                                                             <span class='pic-tag pic-tag-b'>2020</span>
                                                         </a>
                                                         <div class='stui-vodlist__detail active'>
                                                             <h4 class='title text-overflow'><a
-                                                                        href='./cxplay/40737.html'
-                                                                        title='我在北京等你'>我在北京等你</a>
+                                                                        href='./cxplay/40600.html'
+                                                                        title='安家'>安家</a>
                                                             </h4>
                                                             <p class='text text-overflow text-muted hidden-xs'>
-                                                                主演： 李易峰 江疏影 蒋梦婕 胡宇威 何杜鹃 李晨浩</p>
+                                                                主演：孙俪 / 罗晋 / 张萌 / 郭涛 / 胡可 / 王自健 / 田雷 / 杨皓宇 / 孙佳雨 / 张晓谦 / 王艺哲</p>
                                                         </div>
                                                     </div>
                                                     </li>
@@ -726,6 +740,18 @@ background-size: cover;
                             <ul class="stui-vodlist clearfix">
                                 <li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/m/hqXmahH5SHT3Th.html" title="降龙大师：魔龙咒" alt="$name" data-original="http://p9.qhimg.com/d/dy_a68f18a34d1f8758e6f46003c253b02e.">
+<span class="play hidden-xs"></span><span class="pic-tag pic-tag-b">2020</span>
+</a>
+<div class="stui-vodlist__detail active">
+<h4 class="title text-overflow">
+<a href="vod/m/hqXmahH5SHT3Th.html" title="降龙大师：魔龙咒">降龙大师：魔龙咒</a>
+<p class="text text-overflow text-muted hidden-xs">主演：陈浩民 姜萌轩 盛英豪 金刚 徐少强</p>
+</h4>
+</div>
+</div>
+</li><li class="col-md-6 col-sm-4 col-xs-3">
+<div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="vod/m/gqPjZRH5SHT1TB.html" title="绝世娇妃" alt="$name" data-original="http://p4.qhimg.com/d/dy_8992178c235cd2be19efb2720ea9c6da.jpg">
 <span class="play hidden-xs"></span><span class="pic-tag pic-tag-b">2020</span>
 </a>
@@ -745,18 +771,6 @@ background-size: cover;
 <h4 class="title text-overflow">
 <a href="vod/m/gKXmYRH5SHT1Sx.html" title="超能手机">超能手机</a>
 <p class="text text-overflow text-muted hidden-xs">主演：李相炫 张咏娴 陈文 易上歆 李修任</p>
-</h4>
-</div>
-</div>
-</li><li class="col-md-6 col-sm-4 col-xs-3">
-<div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/m/gqTpahH5SHT0Sh.html" title="开往远方的地铁" alt="$name" data-original="http://p5.qhimg.com/d/dy_4efc9ebf70ca91c934b695d1ccb48732.jpg">
-<span class="play hidden-xs"></span><span class="pic-tag pic-tag-b">2020</span>
-</a>
-<div class="stui-vodlist__detail active">
-<h4 class="title text-overflow">
-<a href="vod/m/gqTpahH5SHT0Sh.html" title="开往远方的地铁">开往远方的地铁</a>
-<p class="text text-overflow text-muted hidden-xs">主演：唐鑫 梁佳楠 唐雪卉 宦宇 杨梓琛</p>
 </h4>
 </div>
 </div>
@@ -885,7 +899,7 @@ background-size: cover;
                             </div>
                             <div class="stui-pannel_bd clearfix">
                                 <ul class="stui-vodlist__text active col-pd clearfix">
-                                    <li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/gqfnahH5Rnr5Th.html' title='勇敢者游戏2：再战巅峰'><span class='am-badge am-round pull-left'>1</span><span class='text-muted pull-right'>20.9万</span><em class='text-red'></em>&nbsp;勇敢者游戏2：再战巅峰</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/fqLjaRH5RnXASR.html' title='叶问4'><span class='am-badge am-round pull-left'>2</span><span class='text-muted pull-right'>8.4万</span><em class='text-red'></em>&nbsp;叶问4</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/f6bkaBH5S0H3Tx.html' title='星际探索'><span class='am-badge am-round pull-left'>3</span><span class='text-muted pull-right'>6.5万</span><em class='text-red'></em>&nbsp;星际探索</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/f6fkZhH5SHH4Sx.html' title='霹雳娇娃2019'><span class='am-badge am-round pull-left'>4</span><span class='text-muted pull-right'>6.5万</span><em class='text-red'></em>&nbsp;霹雳娇娃2019</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/gKnmaBH5RXn6TR.html' title='宠爱'><span class='am-badge am-round pull-left'>5</span><span class='text-muted pull-right'>4.5万</span><em class='text-red'></em>&nbsp;宠爱</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/hqXqYhH4Rnb2SR.html' title='灵魂摆渡黄泉'><span class='am-badge am-round pull-left'>6</span><span class='text-muted pull-right'>4.1万</span><em class='text-red'></em>&nbsp;灵魂摆渡黄泉</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/f6roaBH5S0r8Sx.html' title='解放·终局营救'><span class='am-badge am-round pull-left'>7</span><span class='text-muted pull-right'>4.1万</span><em class='text-red'></em>&nbsp;解放·终局营救</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/fqXnaRH5S0j8SR.html' title='肥龙过江 2020'><span class='am-badge am-round pull-left'>8</span><span class='text-muted pull-right'>4万</span><em class='text-red'></em>&nbsp;肥龙过江 2020</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/gKblZhH2RHT5SB.html' title='寻龙诀'><span class='am-badge am-round pull-left'>9</span><span class='text-muted pull-right'>3.9万</span><em class='text-red'></em>&nbsp;寻龙诀</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/fqflYhH4QnH4SR.html' title='前任3：再见前任'><span class='am-badge am-round pull-left'>10</span><span class='text-muted pull-right'>3.8万</span><em class='text-red'></em>&nbsp;前任3：再见前任</a></li>                                </ul>
+                                    <li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/gKflYxH5QnX7Sx.html' title='冰雪奇缘2'><span class='am-badge am-round pull-left'>1</span><span class='text-muted pull-right'>9.8万</span><em class='text-red'></em>&nbsp;冰雪奇缘2</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/gqfnahH5Rnr5Th.html' title='勇敢者游戏2：再战巅峰'><span class='am-badge am-round pull-left'>2</span><span class='text-muted pull-right'>6.5万</span><em class='text-red'></em>&nbsp;勇敢者游戏2：再战巅峰</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/fqLjaRH5RnXASR.html' title='叶问4'><span class='am-badge am-round pull-left'>3</span><span class='text-muted pull-right'>3.5万</span><em class='text-red'></em>&nbsp;叶问4</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/faPjYhH4RHb2UB.html' title='卧底巨星'><span class='am-badge am-round pull-left'>4</span><span class='text-muted pull-right'>3万</span><em class='text-red'></em>&nbsp;卧底巨星</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/f6fkZhH5SHH4Sx.html' title='霹雳娇娃2019'><span class='am-badge am-round pull-left'>5</span><span class='text-muted pull-right'>2.6万</span><em class='text-red'></em>&nbsp;霹雳娇娃2019</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/hqXqYhH4Rnb2SR.html' title='灵魂摆渡黄泉'><span class='am-badge am-round pull-left'>6</span><span class='text-muted pull-right'>2.5万</span><em class='text-red'></em>&nbsp;灵魂摆渡黄泉</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/fabiahH4QHj0Tx.html' title='喜欢你 2017'><span class='am-badge am-round pull-left'>7</span><span class='text-muted pull-right'>2.3万</span><em class='text-red'></em>&nbsp;喜欢你 2017</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/gKnmaBH5RXn6TR.html' title='宠爱'><span class='am-badge am-round pull-left'>8</span><span class='text-muted pull-right'>2.1万</span><em class='text-red'></em>&nbsp;宠爱</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/f6bkaBH5S0H3Tx.html' title='星际探索'><span class='am-badge am-round pull-left'>9</span><span class='text-muted pull-right'>2.1万</span><em class='text-red'></em>&nbsp;星际探索</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/m/fqLqaRH4S0r1TR.html' title='唐人街探案3'><span class='am-badge am-round pull-left'>10</span><span class='text-muted pull-right'>2万</span><em class='text-red'></em>&nbsp;唐人街探案3</a></li>                                </ul>
                             </div>
                             <div class="stui-pannel_bd">
                                 <div class="stui-pannel__head clearfix">
@@ -979,17 +993,6 @@ background-size: cover;
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/ct/OkHlcp7lM4OzCD.html" title="开心超人联盟之能源核守护者" alt="$name" data-original="http://p6.qhimg.com/d/dy_18e68f17dfcc8ceaec922714aea16e74.jpg">
-<span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">52集全</span>
-</a><div class="stui-vodlist__detail active">
-<h4 class="title text-overflow">
-<a href="vod/ct/OkHlcp7lM4OzCD.html" title="开心超人联盟之能源核守护者">开心超人联盟之能源核守护者</a>
-</h4>
-</div>
-</div>
-</li><li class="col-md-6 col-sm-4 col-xs-3">
-<div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="vod/ct/OULmbZ7lMoW1Cz.html" title="今天开始做明星" alt="$name" data-original="http://p3.qhimg.com/d/dy_84b6e55d3b60276a7fc878590e113166.jpg">
 <span class="play hidden-xs"></span>
 <span class="pic-tag pic-tag-b">更新至13集</span>
@@ -1001,12 +1004,12 @@ background-size: cover;
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/ct/PUDpcJ7kLoauDj.html" title="香肠派对" alt="$name" data-original="http://p0.qhimg.com/t01c3441db8aae884d8.jpg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/ct/OkHlcp7lM4OzCD.html" title="开心超人联盟之能源核守护者" alt="$name" data-original="http://p6.qhimg.com/d/dy_18e68f17dfcc8ceaec922714aea16e74.jpg">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">更新至178集</span>
+<span class="pic-tag pic-tag-b">52集全</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
-<a href="vod/ct/PUDpcJ7kLoauDj.html" title="香肠派对">香肠派对</a>
+<a href="vod/ct/OkHlcp7lM4OzCD.html" title="开心超人联盟之能源核守护者">开心超人联盟之能源核守护者</a>
 </h4>
 </div>
 </div>
@@ -1014,7 +1017,7 @@ background-size: cover;
 <div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="vod/ct/O0DncMDbLYC2DD.html" title="航海王" alt="$name" data-original="http://p4.qhimg.com/d/dy_1cf688c4fd8403a25dc03e6b8ddad9b5.jpg">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">更新至923集</span>
+<span class="pic-tag pic-tag-b">更新至924集</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
 <a href="vod/ct/O0DncMDbLYC2DD.html" title="航海王">航海王</a>
@@ -1034,23 +1037,23 @@ background-size: cover;
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/ct/OkDkaZ7lMoO0ED.html" title="斗罗大陆3龙王传说" alt="$name" data-original="http://p9.qhimg.com/d/dy_65851261e6d354117d98e0b25bf2c6ac.jpg">
+<span class="play hidden-xs"></span>
+<span class="pic-tag pic-tag-b">更新至17集</span>
+</a><div class="stui-vodlist__detail active">
+<h4 class="title text-overflow">
+<a href="vod/ct/OkDkaZ7lMoO0ED.html" title="斗罗大陆3龙王传说">斗罗大陆3龙王传说</a>
+</h4>
+</div>
+</div>
+</li><li class="col-md-6 col-sm-4 col-xs-3">
+<div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="vod/ct/OUPrbp7kNIKuCT.html" title="熊出没之探险日记" alt="$name" data-original="http://p7.qhimg.com/d/dy_2d054b7bb31907604e8e041d2dee04f4.">
 <span class="play hidden-xs"></span>
 <span class="pic-tag pic-tag-b">52集全</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
 <a href="vod/ct/OUPrbp7kNIKuCT.html" title="熊出没之探险日记">熊出没之探险日记</a>
-</h4>
-</div>
-</div>
-</li><li class="col-md-6 col-sm-4 col-xs-3">
-<div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/ct/OkDkaZ7lMoO0ED.html" title="斗罗大陆3龙王传说" alt="$name" data-original="http://p9.qhimg.com/d/dy_65851261e6d354117d98e0b25bf2c6ac.jpg">
-<span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">更新至16集</span>
-</a><div class="stui-vodlist__detail active">
-<h4 class="title text-overflow">
-<a href="vod/ct/OkDkaZ7lMoO0ED.html" title="斗罗大陆3龙王传说">斗罗大陆3龙王传说</a>
 </h4>
 </div>
 </div>
@@ -1067,6 +1070,17 @@ background-size: cover;
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/ct/PUDpcJ7kLoauDj.html" title="香肠派对" alt="$name" data-original="http://p0.qhimg.com/t01c3441db8aae884d8.jpg">
+<span class="play hidden-xs"></span>
+<span class="pic-tag pic-tag-b">更新至179集</span>
+</a><div class="stui-vodlist__detail active">
+<h4 class="title text-overflow">
+<a href="vod/ct/PUDpcJ7kLoauDj.html" title="香肠派对">香肠派对</a>
+</h4>
+</div>
+</div>
+</li><li class="col-md-6 col-sm-4 col-xs-3">
+<div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="vod/ct/QUbkbcLWLYz3ED.html" title="火影忍者" alt="$name" data-original="http://p1.qhimg.com/d/dy_1198c653eba8d0c1a97698d6b24fb28b.jpg">
 <span class="play hidden-xs"></span>
 <span class="pic-tag pic-tag-b">720集全</span>
@@ -1078,23 +1092,23 @@ background-size: cover;
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/ct/OUDmb57lMoCxED.html" title="超级飞侠 第七季" alt="$name" data-original="http://p6.qhimg.com/d/dy_1a2d4ef6a8b42d5405319f9fe5228eb6.jpg">
-<span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">20集全</span>
-</a><div class="stui-vodlist__detail active">
-<h4 class="title text-overflow">
-<a href="vod/ct/OUDmb57lMoCxED.html" title="超级飞侠 第七季">超级飞侠 第七季</a>
-</h4>
-</div>
-</div>
-</li><li class="col-md-6 col-sm-4 col-xs-3">
-<div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="vod/ct/PETscJ7lMYO3Dj.html" title="小猪佩奇 第七季" alt="$name" data-original="http://p6.qhimg.com/d/dy_720433f7911755ab78671fbf7933cff1.jpg">
 <span class="play hidden-xs"></span>
 <span class="pic-tag pic-tag-b">更新至39集</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
 <a href="vod/ct/PETscJ7lMYO3Dj.html" title="小猪佩奇 第七季">小猪佩奇 第七季</a>
+</h4>
+</div>
+</div>
+</li><li class="col-md-6 col-sm-4 col-xs-3">
+<div class="stui-vodlist__box stui-vodlist__bg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/ct/OUDmb57lMoCxED.html" title="超级飞侠 第七季" alt="$name" data-original="http://p6.qhimg.com/d/dy_1a2d4ef6a8b42d5405319f9fe5228eb6.jpg">
+<span class="play hidden-xs"></span>
+<span class="pic-tag pic-tag-b">20集全</span>
+</a><div class="stui-vodlist__detail active">
+<h4 class="title text-overflow">
+<a href="vod/ct/OUDmb57lMoCxED.html" title="超级飞侠 第七季">超级飞侠 第七季</a>
 </h4>
 </div>
 </div>
@@ -1115,7 +1129,7 @@ background-size: cover;
                             </div>
                             <div class="stui-pannel_bd clearfix">
                                 <ul class="stui-vodlist__text active col-pd clearfix">
-                                    <li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/OUPkaZ7kNY7vDj.html' title='斗罗大陆'><span class='am-badge am-round pull-left'>1</span><span class='text-muted pull-right'>24.5万</span><em class='text-red'></em>&nbsp;斗罗大陆</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/OULmbZ7lMoW1Cz.html' title='今天开始做明星'><span class='am-badge am-round pull-left'>2</span><span class='text-muted pull-right'>16.1万</span><em class='text-red'></em>&nbsp;今天开始做明星</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/OkHlcp7lM4OzCD.html' title='开心超人联盟之能源核守护者'><span class='am-badge am-round pull-left'>3</span><span class='text-muted pull-right'>14.3万</span><em class='text-red'></em>&nbsp;开心超人联盟之能源核守护者</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/O0DncMDbLYC2DD.html' title='航海王'><span class='am-badge am-round pull-left'>4</span><span class='text-muted pull-right'>10.8万</span><em class='text-red'></em>&nbsp;航海王</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/QE4naZ7lLoOuDj.html' title='小猪佩奇 第六季'><span class='am-badge am-round pull-left'>5</span><span class='text-muted pull-right'>10.4万</span><em class='text-red'></em>&nbsp;小猪佩奇 第六季</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/OUPrbp7kNIKuCT.html' title='熊出没之探险日记'><span class='am-badge am-round pull-left'>6</span><span class='text-muted pull-right'>9.3万</span><em class='text-red'></em>&nbsp;熊出没之探险日记</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/OkDkaZ7lMoO0ED.html' title='斗罗大陆3龙王传说'><span class='am-badge am-round pull-left'>7</span><span class='text-muted pull-right'>9.3万</span><em class='text-red'></em>&nbsp;斗罗大陆3龙王传说</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/PUDpcJ7kLoauDj.html' title='香肠派对'><span class='am-badge am-round pull-left'>8</span><span class='text-muted pull-right'>8.6万</span><em class='text-red'></em>&nbsp;香肠派对</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/OUbrasLUXY3uCz.html' title='迪迦奥特曼'><span class='am-badge am-round pull-left'>9</span><span class='text-muted pull-right'>8.6万</span><em class='text-red'></em>&nbsp;迪迦奥特曼</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/QUbkbcLWLYz3ED.html' title='火影忍者'><span class='am-badge am-round pull-left'>10</span><span class='text-muted pull-right'>7.6万</span><em class='text-red'></em>&nbsp;火影忍者</a></li>                                </ul>
+                                    <li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/OUPkaZ7kNY7vDj.html' title='斗罗大陆'><span class='am-badge am-round pull-left'>1</span><span class='text-muted pull-right'>16.2万</span><em class='text-red'></em>&nbsp;斗罗大陆</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/OkDkaZ7lMoO0ED.html' title='斗罗大陆3龙王传说'><span class='am-badge am-round pull-left'>2</span><span class='text-muted pull-right'>9.2万</span><em class='text-red'></em>&nbsp;斗罗大陆3龙王传说</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/O0DncMDbLYC2DD.html' title='航海王'><span class='am-badge am-round pull-left'>3</span><span class='text-muted pull-right'>7万</span><em class='text-red'></em>&nbsp;航海王</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/OULmbZ7lMoW1Cz.html' title='今天开始做明星'><span class='am-badge am-round pull-left'>4</span><span class='text-muted pull-right'>6.9万</span><em class='text-red'></em>&nbsp;今天开始做明星</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/OkHlcp7lM4OzCD.html' title='开心超人联盟之能源核守护者'><span class='am-badge am-round pull-left'>5</span><span class='text-muted pull-right'>6.1万</span><em class='text-red'></em>&nbsp;开心超人联盟之能源核守护者</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/QE4naZ7lLoOuDj.html' title='小猪佩奇 第六季'><span class='am-badge am-round pull-left'>6</span><span class='text-muted pull-right'>5.9万</span><em class='text-red'></em>&nbsp;小猪佩奇 第六季</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/OUPrbp7kNIKuCT.html' title='熊出没之探险日记'><span class='am-badge am-round pull-left'>7</span><span class='text-muted pull-right'>5.2万</span><em class='text-red'></em>&nbsp;熊出没之探险日记</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/OUbrasLUXY3uCz.html' title='迪迦奥特曼'><span class='am-badge am-round pull-left'>8</span><span class='text-muted pull-right'>4.9万</span><em class='text-red'></em>&nbsp;迪迦奥特曼</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/QUbkbcLWLYz3ED.html' title='火影忍者'><span class='am-badge am-round pull-left'>9</span><span class='text-muted pull-right'>4.7万</span><em class='text-red'></em>&nbsp;火影忍者</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/ct/PUDpcJ7kLoauDj.html' title='香肠派对'><span class='am-badge am-round pull-left'>10</span><span class='text-muted pull-right'>4.4万</span><em class='text-red'></em>&nbsp;香肠派对</a></li>                                </ul>
                             </div>
                             <div class="stui-pannel_bd">
                                 <div class="stui-pannel__head clearfix">
@@ -1194,146 +1208,146 @@ background-size: cover;
                             <ul class="stui-vodlist clearfix">
                                 <li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/ZMQlbnNz72A5ET.html" title="运动不一样 第四季" alt="$name" data-original="http://p3.qhimg.com/d/dy_95c45b9f73728ede898bf7c71ff5d277.jpg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/acUnb3Nz72AADT.html" title="请和我奔现吧" alt="$name" data-original="http://p3.qhimg.com/d/dy_1c566ad02db5ec70bb92e543fd3122bf.">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">2020-03-13期</span>
+<span class="pic-tag pic-tag-b">2020-03-17期</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
-<a href="vod/va/ZMQlbnNz72A5ET.html" title="运动不一样 第四季">运动不一样 第四季</a>
+<a href="vod/va/acUnb3Nz72AADT.html" title="请和我奔现吧">请和我奔现吧</a>
 </h4>
-<p class="text text-overflow text-muted hidden-xs">“大长腿”击剑手孙伟</p>
+<p class="text text-overflow text-muted hidden-xs">猛男校草为抢白富美出奇招</p>
 </div>
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/ZsIraXNyAJkCFD.html" title="朋友请听好" alt="$name" data-original="http://p9.qhimg.com/d/dy_6494fea56bf531cb790e238399c47e7a.jpg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/ZcMna3Nz72A5Dz.html" title="朋友请听好 秘密版" alt="$name" data-original="http://p3.qhimg.com/d/dy_6c297c381906791057d7209dc8615387.jpg">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">2020-03-13期</span>
+<span class="pic-tag pic-tag-b">2020-03-17期</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
-<a href="vod/va/ZsIraXNyAJkCFD.html" title="朋友请听好">朋友请听好</a>
+<a href="vod/va/ZcMna3Nz72A5Dz.html" title="朋友请听好 秘密版">朋友请听好 秘密版</a>
 </h4>
-<p class="text text-overflow text-muted hidden-xs">Plus版03期：何炅聊驾考趣事</p>
+<p class="text text-overflow text-muted hidden-xs">12期：范丞丞把驾校考倒闭？</p>
 </div>
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/Ycgtb3NyAJk8DT.html" title="同上一堂课" alt="$name" data-original="http://p1.qhimg.com/d/dy_6e94768bdb689cfa0ec1c906ca487125.jpg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/ZscrcXNyAJkBFD.html" title="天赐的声音升级版" alt="$name" data-original="http://p1.qhimg.com/d/dy_e555174f0405fb084c95eae56710a50e.jpg">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">2020-03-13期</span>
+<span class="pic-tag pic-tag-b">2020-03-16期</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
-<a href="vod/va/Ycgtb3NyAJk8DT.html" title="同上一堂课">同上一堂课</a>
+<a href="vod/va/ZscrcXNyAJkBFD.html" title="天赐的声音升级版">天赐的声音升级版</a>
 </h4>
-<p class="text text-overflow text-muted hidden-xs">走近中央音乐学院声乐歌剧系</p>
+<p class="text text-overflow text-muted hidden-xs">李汶翰曾试图放弃演艺圈？ 霍尊演绎国外...</p>
+</div>
+</div>
+</li><li class="col-md-6 col-sm-4 col-xs-3">
+<div class="stui-vodlist__box stui-vodlist__bg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/ZMcsaXNyAJkAFD.html" title="天赐的声音" alt="$name" data-original="http://p1.qhimg.com/d/dy_c80b2f1b71428b13e621b056feffbf50.jpg">
+<span class="play hidden-xs"></span>
+<span class="pic-tag pic-tag-b">2020-03-14期</span>
+</a><div class="stui-vodlist__detail active">
+<h4 class="title text-overflow">
+<a href="vod/va/ZMcsaXNyAJkAFD.html" title="天赐的声音">天赐的声音</a>
+</h4>
+<p class="text text-overflow text-muted hidden-xs">第3期 张韶涵李汶翰为偶像歌手正名 龚琳...</p>
 </div>
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/YcEqbXNyAJk6Ez.html" title="战疫情特别报道" alt="$name" data-original="http://p1.qhimg.com/d/dy_6c92e5957ff96f2f5da881d910126006.jpg">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">2020-03-14期</span>
+<span class="pic-tag pic-tag-b">2020-03-17期</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
 <a href="vod/va/YcEqbXNyAJk6Ez.html" title="战疫情特别报道">战疫情特别报道</a>
 </h4>
-<p class="text text-overflow text-muted hidden-xs">《战疫情特别报道》 20200314 15:00</p>
+<p class="text text-overflow text-muted hidden-xs">《战疫情特别报道》 20200317 15:00</p>
 </div>
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/Y85obHNyAJk5Ej.html" title="同上一堂课·直播课堂" alt="$name" data-original="http://p3.qhimg.com/d/dy_2ee9f044a5434829a290712dd0fb20ae.jpg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/aMArbnNyAJk6DD.html" title="我是接班人之老师说" alt="$name" data-original="http://p1.qhimg.com/d/dy_114bd018104ca6aeb6f614784865b8d6.jpg">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">2020-03-13期</span>
+<span class="pic-tag pic-tag-b">2020-03-17期</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
-<a href="vod/va/Y85obHNyAJk5Ej.html" title="同上一堂课·直播课堂">同上一堂课·直播课堂</a>
+<a href="vod/va/aMArbnNyAJk6DD.html" title="我是接班人之老师说">我是接班人之老师说</a>
 </h4>
-<p class="text text-overflow text-muted hidden-xs">安颖《小学四年级数学》</p>
+<p class="text text-overflow text-muted hidden-xs">居家运动强身健体之居家运动锻炼</p>
+</div>
+</div>
+</li><li class="col-md-6 col-sm-4 col-xs-3">
+<div class="stui-vodlist__box stui-vodlist__bg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/ZsEsaXNyAJk5ET.html" title="歌手·当打之年 秘密版" alt="$name" data-original="http://p0.qhimg.com/d/dy_8caa070ab2eb26cc5f2db9c255384411.jpg">
+<span class="play hidden-xs"></span>
+<span class="pic-tag pic-tag-b">2020-03-17期</span>
+</a><div class="stui-vodlist__detail active">
+<h4 class="title text-overflow">
+<a href="vod/va/ZsEsaXNyAJk5ET.html" title="歌手·当打之年 秘密版">歌手·当打之年 秘密版</a>
+</h4>
+<p class="text text-overflow text-muted hidden-xs">06期：徐佳莹被胡夏奇袭</p>
 </div>
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/YsMpbXNyAJk5ED.html" title="名医话养生 防控疫情特别节目" alt="$name" data-original="http://p3.qhimg.com/d/dy_14fd42b49a1e0adc5c22250af07d7aac.">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">2020-03-13期</span>
+<span class="pic-tag pic-tag-b">2020-03-17期</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
 <a href="vod/va/YsMpbXNyAJk5ED.html" title="名医话养生 防控疫情特别节目">名医话养生 防控疫情特别节目</a>
 </h4>
-<p class="text text-overflow text-muted hidden-xs">中西医并肩 战“疫”有方</p>
+<p class="text text-overflow text-muted hidden-xs">提高免疫力 中医来支招</p>
 </div>
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/ZMElbHNyAJk5DT.html" title="众志成城 抗击疫情" alt="$name" data-original="http://p4.qhimg.com/d/dy_114b33e560f5cb91e977cace5c5abf90.">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">2020-03-14期</span>
+<span class="pic-tag pic-tag-b">2020-03-17期</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
 <a href="vod/va/ZMElbHNyAJk5DT.html" title="众志成城 抗击疫情">众志成城 抗击疫情</a>
 </h4>
-<p class="text text-overflow text-muted hidden-xs">疫情之下 我国跨境电商机遇与挑战并存</p>
-</div>
-</div>
-</li><li class="col-md-6 col-sm-4 col-xs-3">
-<div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/ZsMnbXNyAJgAEz.html" title="歌手·当打之年" alt="$name" data-original="http://p0.qhimg.com/t01af25aa18628b6940.jpg">
-<span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">2020-03-13期</span>
-</a><div class="stui-vodlist__detail active">
-<h4 class="title text-overflow">
-<a href="vod/va/ZsMnbXNyAJgAEz.html" title="歌手·当打之年">歌手·当打之年</a>
-</h4>
-<p class="text text-overflow text-muted hidden-xs">周深中俄双语天籁美声 华晨宇电视首唱《...</p>
+<p class="text text-overflow text-muted hidden-xs">龙井春茶季(上)：万名采茶工 如何来得了...</p>
 </div>
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/YsEmanNyAJg7ED.html" title="《生命缘》抗击疫情特别节目" alt="$name" data-original="http://p9.qhimg.com/d/dy_e37794054c471a0669b9a204026dc180.jpg">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">2020-03-13期</span>
+<span class="pic-tag pic-tag-b">2020-03-17期</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
 <a href="vod/va/YsEmanNyAJg7ED.html" title="《生命缘》抗击疫情特别节目">《生命缘》抗击疫情特别节目</a>
 </h4>
-<p class="text text-overflow text-muted hidden-xs">“感急”的暖男医生</p>
+<p class="text text-overflow text-muted hidden-xs">生命缘</p>
 </div>
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/Y8ImbHNyAJg3FD.html" title="路见不平来碗Fun2020" alt="$name" data-original="http://p0.qhimg.com/d/dy_e2e0dba65476285e616bdf7f08b55b20.jpg">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/ZsMla3NyAJcADz.html" title="我家那闺女2 闺女日记" alt="$name" data-original="http://p5.qhimg.com/d/dy_d9f764aa6429dab05263040866ed42e2.jpg">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">2020-03-13期</span>
+<span class="pic-tag pic-tag-b">2020-03-17期</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
-<a href="vod/va/Y8ImbHNyAJg3FD.html" title="路见不平来碗Fun2020">路见不平来碗Fun2020</a>
+<a href="vod/va/ZsMla3NyAJcADz.html" title="我家那闺女2 闺女日记">我家那闺女2 闺女日记</a>
 </h4>
-<p class="text text-overflow text-muted hidden-xs">全民烧烤城市齐齐哈尔1</p>
-</div>
-</div>
-</li><li class="col-md-6 col-sm-4 col-xs-3">
-<div class="stui-vodlist__box stui-vodlist__bg">
-<a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/ZcUncXNyAJc8Ez.html" title="王牌对王牌 第5季" alt="$name" data-original="http://p3.qhimg.com/d/dy_36dca342e730f48f89f3e887a4c0d1d2.">
-<span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">2020-03-13期</span>
-</a><div class="stui-vodlist__detail active">
-<h4 class="title text-overflow">
-<a href="vod/va/ZcUncXNyAJc8Ez.html" title="王牌对王牌 第5季">王牌对王牌 第5季</a>
-</h4>
-<p class="text text-overflow text-muted hidden-xs">沈腾贾玲被战疫一线工作者感动 华晨宇为...</p>
+<p class="text text-overflow text-muted hidden-xs">05期：林允韩火火“互怼”升级</p>
 </div>
 </div>
 </li><li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="vod/va/Y8AtcnNyAJI5ET.html" title="男生女生向前冲 第十二季" alt="$name" data-original="http://p9.qhimg.com/d/dy_136d27e0b00b45d88e5f5f2489b4c30d.">
 <span class="play hidden-xs"></span>
-<span class="pic-tag pic-tag-b">2020-03-14期</span>
+<span class="pic-tag pic-tag-b">2020-03-17期</span>
 </a><div class="stui-vodlist__detail active">
 <h4 class="title text-overflow">
 <a href="vod/va/Y8AtcnNyAJI5ET.html" title="男生女生向前冲 第十二季">男生女生向前冲 第十二季</a>
 </h4>
-<p class="text text-overflow text-muted hidden-xs">不愧是体育生 小伙闯关展现超强臂力</p>
+<p class="text text-overflow text-muted hidden-xs">节目的忠实观众来袭 成功通关拿大奖</p>
 </div>
 </div>
 </li>                            </ul>
@@ -1353,7 +1367,7 @@ background-size: cover;
                             </div>
                             <div class="stui-pannel_bd clearfix">
                                 <ul class="stui-vodlist__text active col-pd clearfix">
-                                    <li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/ZMYka3Nz72E2DT.html' title='青春有你第2季'><span class='am-badge am-round pull-left'>1</span><span class='text-muted pull-right'>50.8万</span><em class='text-red'></em>&nbsp;青春有你第2季</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/ZcUncXNyAJc8Ez.html' title='王牌对王牌 第5季'><span class='am-badge am-round pull-left'>2</span><span class='text-muted pull-right'>33.8万</span><em class='text-red'></em>&nbsp;王牌对王牌 第5季</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/ZsIraXNyAJkCFD.html' title='朋友请听好'><span class='am-badge am-round pull-left'>3</span><span class='text-muted pull-right'>22万</span><em class='text-red'></em>&nbsp;朋友请听好</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/ZsEob6Jv7JQ3Dz.html' title='快乐大本营'><span class='am-badge am-round pull-left'>4</span><span class='text-muted pull-right'>21.9万</span><em class='text-red'></em>&nbsp;快乐大本营</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/ZcUmaXNz72ABEj.html' title='婚前21天'><span class='am-badge am-round pull-left'>5</span><span class='text-muted pull-right'>10.4万</span><em class='text-red'></em>&nbsp;婚前21天</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/acgnaXNyAJc7Ez.html' title='我家那闺女 第二季'><span class='am-badge am-round pull-left'>6</span><span class='text-muted pull-right'>10.4万</span><em class='text-red'></em>&nbsp;我家那闺女 第二季</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/YcIqbKlv7JQ3Ez.html' title='天天向上'><span class='am-badge am-round pull-left'>7</span><span class='text-muted pull-right'>9.6万</span><em class='text-red'></em>&nbsp;天天向上</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/ZsMnbXNyAJgAEz.html' title='歌手·当打之年'><span class='am-badge am-round pull-left'>8</span><span class='text-muted pull-right'>8.1万</span><em class='text-red'></em>&nbsp;歌手·当打之年</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/ZsUkbXNz72AAEj.html' title='我们的乐队'><span class='am-badge am-round pull-left'>9</span><span class='text-muted pull-right'>7万</span><em class='text-red'></em>&nbsp;我们的乐队</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/asQpaXNyAJg2FT.html' title='欢乐喜剧人 第六季'><span class='am-badge am-round pull-left'>10</span><span class='text-muted pull-right'>6.6万</span><em class='text-red'></em>&nbsp;欢乐喜剧人 第六季</a></li>                                </ul>
+                                    <li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/ZsEob6Jv7JQ3Dz.html' title='快乐大本营'><span class='am-badge am-round pull-left'>1</span><span class='text-muted pull-right'>24.7万</span><em class='text-red'></em>&nbsp;快乐大本营</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/ZcUncXNyAJc8Ez.html' title='王牌对王牌 第5季'><span class='am-badge am-round pull-left'>2</span><span class='text-muted pull-right'>23.9万</span><em class='text-red'></em>&nbsp;王牌对王牌 第5季</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/ZMYka3Nz72E2DT.html' title='青春有你第2季'><span class='am-badge am-round pull-left'>3</span><span class='text-muted pull-right'>18.1万</span><em class='text-red'></em>&nbsp;青春有你第2季</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/asQpaXNyAJg2FT.html' title='欢乐喜剧人 第六季'><span class='am-badge am-round pull-left'>4</span><span class='text-muted pull-right'>10.9万</span><em class='text-red'></em>&nbsp;欢乐喜剧人 第六季</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/acgnaXNyAJc7Ez.html' title='我家那闺女 第二季'><span class='am-badge am-round pull-left'>5</span><span class='text-muted pull-right'>8万</span><em class='text-red'></em>&nbsp;我家那闺女 第二季</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/YcQmaXNyAJEAFT.html' title='声临其境 第三季'><span class='am-badge am-round pull-left'>6</span><span class='text-muted pull-right'>7.5万</span><em class='text-red'></em>&nbsp;声临其境 第三季</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/YcIqbKlv7JQ3Ez.html' title='天天向上'><span class='am-badge am-round pull-left'>7</span><span class='text-muted pull-right'>6.8万</span><em class='text-red'></em>&nbsp;天天向上</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/ZsUkbXNz72AAEj.html' title='我们的乐队'><span class='am-badge am-round pull-left'>8</span><span class='text-muted pull-right'>6.7万</span><em class='text-red'></em>&nbsp;我们的乐队</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/ZMcsaXNyAJkAFD.html' title='天赐的声音'><span class='am-badge am-round pull-left'>9</span><span class='text-muted pull-right'>6.4万</span><em class='text-red'></em>&nbsp;天赐的声音</a></li><li class='col-xs-1 padding-0'><a class='text-overflow' href='./vod/va/ZsMnbXNyAJgAEz.html' title='歌手·当打之年'><span class='am-badge am-round pull-left'>10</span><span class='text-muted pull-right'>5.8万</span><em class='text-red'></em>&nbsp;歌手·当打之年</a></li>                                </ul>
                             </div>
                             <div class="stui-pannel_bd">
                                 <div class="stui-pannel__head clearfix">
@@ -1468,7 +1482,7 @@ background-size: cover;
                                                 <a href="yplay/1081844785546946857.html"
                                                    title=''>热舞</a>
                                             </h4>
-                                            <p class='text text-overflow text-muted hidden-xs'>5566                                                次播放</p>
+                                            <p class='text text-overflow text-muted hidden-xs'>5568                                                次播放</p>
                                         </div>
                                     </div>
                                     </li>                                    <li class='col-md-6 col-sm-4 col-xs-3'>
@@ -1483,7 +1497,7 @@ background-size: cover;
                                                 <a href="yplay/1081850575798193675.html"
                                                    title=''>我的女汉子</a>
                                             </h4>
-                                            <p class='text text-overflow text-muted hidden-xs'>3288                                                次播放</p>
+                                            <p class='text text-overflow text-muted hidden-xs'>3293                                                次播放</p>
                                         </div>
                                     </div>
                                     </li>                                    <li class='col-md-6 col-sm-4 col-xs-3'>
@@ -1630,29 +1644,122 @@ background-size: cover;
                 <!--友链-->
     </div>
 </div>
+
+<script>
+    $("#cu").click(function (e) {
+            $(' .lodoing').show();
+            $(' .jiazai').show();
+    })
+</script>
+
 <style>
 #footer{
-    min-height: 65px;
+    left: 0;
+    min-height: 3rem;
+    border-top:1px solid #c5c5c5;
+    box-shadow:0 -2px 3px -1px  #c5c5c5;
+    bottom: -2px;
 }
-.stui-page {
-    margin-bottom: 105px
+#footer  a{
+   height: 3rem;
+    padding-top: 0rem;
+    font-size:0.8rem;
+}
+#footer  a.active{
+    color: #d80704;
+}
+
+#footer img{
+    width: auto;
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 .paiban{
     width: 25%;
 }
+.lodoing{
+    width: 100%;
+    background: rgba(0, 0, 0, .9);
+    z-index: 10;
+    height: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+
+}
+.jiazai{
+    position: fixed;
+    z-index: 13;
+    width: 8rem;
+    height: 8rem;
+    background: url("images/ajax-loader.gif") no-repeat center center;
+    background-size: 100% 100%;
+    left: 25%;
+    top: 30%;
+    opacity: 1;
+    visibility: visible;
+    display: none;
+}
 </style>
+<!--遮羞布-->
+<div class="lodoing"><div class="jiazai"></div></div>
+
+
+<script>
+    $("a").click(function (e) {
+        var str=$(this).attr("href");
+        if($(this).attr("href") && str.indexOf('javascr') && str.indexOf('(') &&  str.indexOf('onclick') ){
+            $(' .lodoing').show();
+            $(' .jiazai').show();
+
+        }
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div id="footer" class="border-t hidden-lg hidden-md" >
-	<ul class="flex-wrap" style="font-weight:bold">
-		<a class="flex-con paiban active" href="/index.html"><li >首页</li></a>
-		<a class="flex-con paiban " href="/cx.html"><li >抢先</li></a>
-        <a class="flex-con paiban " href="/so.html"><li >搜索</li></a>
-        <a class="flex-con paiban " href="/so.html"><li >历史</li></a>
+	<div class="flex-wrap" style="font-weight:bold">
+		<a class="flex-con paiban active" href="/index.html">
+            <img src="/template/jingpin/img/shouye_active.png?v=101">
+            <li >首页</li>
+
+        </a>
+		<a class="flex-con paiban " href="/cx.html">
+            <img src="/template/jingpin/img/yingyuan_.png?v=101">
+            <li >抢先</li>
+
+        </a>
+        <a class="flex-con paiban " href="/so.html">
+            <img src="/template/jingpin/img/zhibo_.png?v=101">
+            <li >搜索 </li>
+
+        </a>
+
+        <a class="flex-con paiban " href="/history.html">
+            <img src="/template/jingpin/img/fuli_.png?v=101">
+            <li >历史</li>
+
+        </a>
 
 	<!--	<a class="flex-con paiban " href="/hall.html"><li onclick="randomSwitchBtn(this);">大厅</li></a>
 		<a class="flex-con paiban " href="/fuli.html"><li onclick="randomSwitchBtn(this);">福利</li></a>
 		<a class="flex-con paiban " href="/so.html"><li onclick="randomSwitchBtn(this);">全网搜</li></a>-->
-	</ul>
+	</div>
 </div>
 	<ul class="stui-extra clearfix">
 		<li><a class="backtop" href="javascript:scroll(0,0)" style="display: block;"><i class="icon iconfont icon-less"></i></a></li>

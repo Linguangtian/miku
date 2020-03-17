@@ -26,20 +26,34 @@ $index = 'active';
     }
     .index-header1{
         margin-top: 1rem;
-        padding-right: 10px;
-        padding-left: 10px;
-        width: calc(100%-20px);
+        width:100%;
     }
     .index-header1 a{
         display: inline-block;
-        width: 29%;
-        margin:0  1.5%;
+        width: 30.5%;
+
         margin-bottom: 10px;
-        font-size: 1.2rem;line-height: 2rem;
+        font-size: 0.7rem;line-height: 2rem;
         text-align: center;
         background-color: #d8d7d7;
         border-radius: 5px;
     }
+    .index-header1 a:nth-child(3n-1){
+        margin:0  3%;
+    }
+    .search-bnt{
+        border-top-right-radius:4px;
+        border-bottom-right-radius:4px;
+        background: #d9534f;
+        border: 1px solid #d9534f;
+        border-left: 0;
+    }
+.form-control{
+border-left: 0;
+border-right: 0;
+    border-radius: 0;
+}
+
 </style>
 
 
@@ -75,13 +89,12 @@ $index = 'active';
 
 <div class="container ">
     <div class="row" style="padding-left: 15px; padding-right: 15px;">
-        <div class="col-md-2"></div>
-        <div class=" col-md-4">
+        <div>
             <div class="input-group">
                 <div class="input-group-addon">片名：</div>
                 <input tabindex="2" class="form-control searchall" id="wd" name="sousuo" type="text"
                        placeholder="输入明星、影片关键词" value="" required="required" onkeydown="if(event.keyCode==13){submi.click()}">
-                <span class="input-group-btn ">
+                <span class="input-group-btn search-bnt">
 					<button id="cu" class="btnn btn-danger" style="border:0" onclick="submit()"> &nbsp; 搜 &nbsp; 索 &nbsp; </button>
                 </span>
             </div>
@@ -90,6 +103,7 @@ $index = 'active';
         <div class="col-md-2"></div>
     </div>
 </div>
+
 
 <!-- 公告start
 <div class="stui-pannel-bg clearfix" style="background-color: #ff6600;">
@@ -1011,4 +1025,12 @@ EOT;
         <!--友链-->
     </div>
 </div>
+
+<script>
+    $("#cu").click(function (e) {
+            $(' .lodoing').show();
+            $(' .jiazai').show();
+    })
+</script>
+
 <?php include 'footer.php'; ?>
