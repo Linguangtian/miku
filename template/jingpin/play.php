@@ -1,4 +1,4 @@
-﻿<?php  include 'head.php';?>
+﻿<><?php  include 'head.php';?>
 <title><?php echo $timu; ?>-<?php echo $mkcms_seoname;?></title>
 <meta name="keywords" content="<?php echo $timu; ?>,<?php echo $mkcms_keywords;?>">
 <meta name="description" content="<?php echo $timu; ?>,主要讲述<?php echo mb_substr(preg_replace("/<(.*?)>/si", "", $jian ),0,85,'utf-8').'...'; ?>">
@@ -46,7 +46,9 @@ function run(){
 			else{
 				if(!empty($b[0])){echo "$mjk$b[0]";}
 				else{
-					echo"$mjk$zyvi[1]";}}?>" allowfullscreen="true" allowtransparency="true" style="width:100%;border:none"></iframe>');}
+					echo"$mjk$zyvi[1]";}}
+					?>
+        " allowfullscreen="true" allowtransparency="true" style="width:100%;border:none"></iframe>');}
 //五秒钟后自动收起
 var t = setTimeout(adsUp,<?php echo $mkcms_miaoshu*1000;?>);   
 </script></div></div></div>
@@ -185,6 +187,7 @@ var t = setTimeout(adsUp,<?php echo $mkcms_miaoshu*1000;?>);
 		al.attr('class','btn-play-source am-btn am-btn-default lipbtn');
 		});
 		$.each($('.lipbtn'),function () {
+               console.info(11);
 			var url = $(this).attr('href');
 			$(this).attr('data-href',url);
 			$(this).attr('href','javascript:;');
@@ -219,28 +222,35 @@ var t = setTimeout(adsUp,<?php echo $mkcms_miaoshu*1000;?>);
 		});})
 </script>
 <script>
-function bofang(obj) {
-var href = $(obj).attr('data-href');
-var text = $(obj).text();
-$('.js').text('-' + text+'');
-$.each($('.lipbtn'), function () {
-$(this).attr('id','');
-});
-$(obj).attr('id','ys');
-var jiekou = $('.jkbtn0').attr('data-jk');
-if (href != '' || href != null) {
-setTimeout(function () {
-$('#video').attr('src', jiekou + href);
-},0)}}
-function xldata(obj) {
-	var url = $(obj).attr('data-jk');
-	$.each($('.jkbtn0'), function () {
-		$(this).removeClass('jkbtn0');});
-		$(obj).addClass('jkbtn0');
-		var src = $('#ys').attr('data-href');
-		$('#video').attr('src', url + src);}
-		</script>
-			<script>
+    function bofang(obj) {
+        var href = $(obj).attr('data-href');
+        var text = $(obj).text();
+        $('.js').text('-' + text + '');
+        $.each($('.lipbtn'), function () {
+            $(this).attr('id', '');
+        });
+        $(obj).attr('id', 'ys');
+        var jiekou = $('.jkbtn0').attr('data-jk');
+        if (href != '' || href != null) {
+            setTimeout(function () {
+                $('#video').attr('src', jiekou + href);
+            }, 0)
+        }
+    }
+
+    function xldata(obj) {
+        var url = $(obj).attr('data-jk');
+        $.each($('.jkbtn0'), function () {
+            $(this).removeClass('jkbtn0');
+        });
+        $(obj).addClass('jkbtn0');
+        var src = $('#ys').attr('data-href');
+        $('#video').attr('src', url + src);
+    }
+</script>
+
+
+<script>
                 $(function () {
                     $('#btn-prev').click(function () {
                         $('#ys').parent().prev().children('a:eq(0)').click();
@@ -249,7 +259,8 @@ function xldata(obj) {
                         $('#ys').parent().next().children('a:eq(0)').click();
                     })//上一集
                 })
-            </script>
+</script>
+
 			<div class="col-lg-wide-25 col-xs-1 stui-pannel-side hidden-sm hidden-xs">
 				<div class="stui-pannel stui-pannel-bg clearfix">
 				<div class="stui-pannel-box clearfix">
@@ -400,4 +411,4 @@ function xldata(obj) {
   </script>
 <script type="text/javascript" src="/template/jingpin/js/history.js"></script>
 <script type="text/javascript">var vod_name='<?php echo $timu; ?>',vod_url=window.location.href,vod_part='1';</script>
-<?php include 'footer.php'; ?>
+<?php include 'footer.php'; ?></>

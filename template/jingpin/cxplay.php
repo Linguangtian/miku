@@ -173,7 +173,6 @@ alert_href('对不起,您观看的视频已经下架,请到官网观看.谢谢!'
 
     if(plus.os.name =='Android'){
 
-        alert('Android');
 
         var self = plus.webview.currentWebview();
 

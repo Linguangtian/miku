@@ -30,11 +30,7 @@
                         <?php
                         for ($i = 0; $i < 18; $i++) {
                             $ccb = "./cxplay/" . $data['data'][$i]['vod_id'] . ".html";
-                            if ($row['d_jifen'] > 0) {
-                                $ok = "onclick=\"return confirm('此视频为收费视频，观看需要支付" . $row['d_jifen'] . "积分，您是否观看？')\"";
-                            } else {
-                                $ok = "";
-                            }
+
                             ?>
                             <li class='col-md-6 col-sm-4 col-xs-3'>
                                 <div class='stui-vodlist__box'>

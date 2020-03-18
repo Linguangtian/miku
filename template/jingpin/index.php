@@ -222,17 +222,8 @@ border-right: 0;
                                 <svg class="iconm" aria-hidden="true">
                                     <use xlink:href="#icon-tv"></use>
                                 </svg>
-                                <a href="tv.html">热播剧集</a></h3>
-                            <ul class="nav nav-text pull-right hidden-sm hidden-xs">
-                                <li><a href="tv___10__rankhot_1.html" class="text-muted">国产剧</a> <span
-                                            class="split-line"></span></li>
-                                <li><a href="tv___11__rankhot_1.html" class="text-muted">港台剧</a> <span
-                                            class="split-line"></span></li>
-                                <li><a href="tv___12__rankhot_1.html" class="text-muted">日韩剧</a> <span
-                                            class="split-line"></span></li>
-                                <li><a href="tv___13__rankhot_1.html" class="text-muted">欧美剧</a> <span
-                                            class="split-line"></span></li>
-                            </ul>
+                                热播剧集</h3>
+
                         </div>
                     </div>
                     <div class="stui-pannel_bd clearfix">
@@ -248,7 +239,7 @@ border-right: 0;
                                         $zstar = $stararr[1][$key];
                                         $chuandi = './vod' . $listarr[1][$key];
                                         echo
-                                        <<<EOT
+                                       '
 <li class="col-md-6 col-sm-4 col-xs-3">
 <div class="stui-vodlist__box stui-vodlist__bg">
 <a class="stui-vodlist__thumb lazyload img-shadow" href="' . $chuandi . '" title="' . $zname . '" alt="' . $zname . '" data-original="' . $zimg . '">
@@ -262,7 +253,7 @@ border-right: 0;
 </div>
 </div>
 </li>
-EOT;
+';
 
 
                                         $i++;
@@ -298,49 +289,7 @@ EOT;
                                     ?>
                                 </ul>
                             </div>
-                            <div class="stui-pannel_bd">
-                                <div class="stui-pannel__head clearfix">
-                                    <a class="more text-muted pull-right" href="tv.html">更多 <i
-                                                class="icon iconfont icon-more"></i></a>
-                                    <h3 class="title">
-                                        <svg class="iconm" aria-hidden="true">
-                                            <use xlink:href="#icon-shoucang-"></use>
-                                        </svg>
-                                        剧集筛选
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="stui-pannel_bd col-pd">
-                                <ul class="stui-vodlist__screen clearfix">
-                                    <li>
-                                        <a href="tv_107____rankhot_1.html" title="军事">军事</a></li>
-                                    <li><a href="tv_104____rankhot_1.html" title="古装">古装</a></li>
-                                    <li><a href="tv_118____rankhot_1.html" title="谍战">谍战</a></li>
-                                    <li><a href="tv_109____rankhot_1.html" title="喜剧">喜剧</a></li>
-                                    <li><a href="tv_101____rankhot_1.html" title="言情">言情</a></li>
-                                    <li><a href="tv_105____rankhot_1.html" title="伦理">伦理</a></li>
-                                    <li><a href="tv_111____rankhot_1.html" title="都市">都市</a></li>
-                                    <li><a href="tv_103____rankhot_1.html" title="警匪">警匪</a></li>
-                                    <li><a href="tv_112____rankhot_1.html" title="历史">历史</a></li>
-                                    <li><a href="tv_117____rankhot_1.html" title="神话">神话</a></li>
-                                    <li><a href="tv_106____rankhot_1.html" title="武侠">武侠</a></li>
-                                    <li><a href="tv_119____rankhot_1.html" title="青春">青春</a></li>
-                                </ul>
-                                <ul class="stui-vodlist__screen top-line-dot clearfix">
-                                    <li><a href="tv__2019___rankhot_1.html" title="2019">2019</a></li>
-                                    <li><a href="tv__2018___rankhot_1.html" title="2018">2018</a></li>
-                                    <li><a href="tv__2017___rankhot_1.html" title="2017">2017</a></li>
-                                    <li><a href="tv__2016___rankhot_1.html" title="2016">2016</a></li>
-                                    <li><a href="tv__2015___rankhot_1.html" title="2015">2015</a></li>
-                                    <li><a href="tv__2014___rankhot_1.html" title="2014">2014</a></li>
-                                    <li><a href="tv__2013___rankhot_1.html" title="2013">2013</a></li>
-                                    <li><a href="tv__2012___rankhot_1.html" title="2012">2012</a></li>
-                                    <li><a href="tv__2011___rankhot_1.html" title="2011.html">2011</a></li>
-                                    <li><a href="tv__2010___rankhot_1.html" title="2010">2010</a></li>
-                                    <li><a href="tv__2009___rankhot_1.html" title="2009">2009</a></li>
-                                    <li><a href="tv__other___rankhot_1.html" title="更早">更早</a></li>
-                                </ul>
-                            </div>
+
                         </div>
                     </div>
                 </div>

@@ -23,8 +23,8 @@ $config = array(
     'cache_file' => $cache_file, //要缓存的文件名
     'expire_seconds' => 3600, //过期的秒数（60秒=1分钟）
 );
-/*
-if (hasCached($config, $remain_seconds, $file_timestamp)) {
+
+/*if (hasCached($config, $remain_seconds, $file_timestamp)) {
 
     $html = '';
     $html .= file_get_contents($config['cache_file']);
@@ -37,13 +37,27 @@ error_reporting(0);
 header('Content-Type:text/html;charset=UTF-8');
 
 $list=json_decode(file_get_contents($cxurl),true);
+
+
+
 $data=json_decode(file_get_contents($url),true);
+
+if(empty($data['data'])){
+    $url=substr($url,0,strpos($url,'&cid'));
+    $data=json_decode(file_get_contents($url),true);
+
+}
+$list['list']['1']=$list['list']['12'];
+unset($list['list']['12']);
+
+
+
 $recordcount = $data['page']['recordcount'];
 $pagesize = $data['page']['pagesize'];
 
 
 
-ob_end_flush();
+
 ob_start();
 include('template/' . $mkcms_bdyun . '/cx.php');
 $content = ob_get_contents();
